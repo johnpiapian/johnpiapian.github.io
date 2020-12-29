@@ -4,8 +4,28 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>JohnPiaPian</title>
+    <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    
+    <main>
+        <sectio id="content" class="content">
+            <h1 class="f-st">Welcome to my website</h1>
+            <h1 class="s-nd">My name is JohnPiaPian</h1>
+        </section>
+    </main>
+    <script>
+        function $(id){
+            return document.getElementById(id);
+        }
+
+        function app(){
+            setTimeout(() => {
+                $('content').style.display = 'none';
+            }, 8000);
+        }
+
+        app();
+
+    </script>
 </body>
 </html>
