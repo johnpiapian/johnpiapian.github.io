@@ -66,6 +66,7 @@ body {
 main {
     display: flex;
     height: 100vh;
+    overflow: hidden;
     background-color: rgb(50, 60, 73);
     justify-content: center;
     align-items: center;
