@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>@johnpiapian</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <main>
+        <section id="content" class="content">
+            <h1 class="f-st">Welcome to my website</h1>
+            <h1 class="s-nd">My name is JohnPiaPian</h1>
+        </section>
+    </main>
+    <script>
+        function $(id){
+            return document.getElementById(id);
+        }
+
+        function app(){
+            setTimeout(() => {
+                $('content').style.display = 'none';
+            }, 8000);
+        }
+
+        app();
+
+    </script>
+</body>
+</html>
