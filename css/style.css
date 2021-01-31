@@ -129,18 +129,20 @@ section.content > * {
 
 section.content .about {
     text-align: center;
+    border-radius: 4px;
     border: 1px solid #dadada;
-}
-
-.about .hash-tag{
-    color: cadetblue;
+    box-shadow: 0px 2px 5px -5px black;
 }
 
 .about p {
     padding: 10px;
+    animation: fadeIn;
+    animation-duration: 2.5s;
+    animation-timing-function: ease-in;
 }
 
-.about .code {
+.about .code,
+.about .hash-tag {
     color: cadetblue;
 }
 
@@ -222,6 +224,7 @@ section.content .connect {
     opacity: .7;
     flex: 1;
     text-align: center;
+    border-radius: 5px;
     /* border: 1px solid cadetblue; */
 }
 
@@ -230,7 +233,7 @@ section.content .connect {
 }
 
 .sm-container ul.socialmedia li.linkedin {
-    border: 1px solid #0073b1;
+    border: 2px solid #0073b1;
 }
 
 .sm-container ul.socialmedia li.linkedin a {
@@ -238,7 +241,7 @@ section.content .connect {
 }
 
 .sm-container ul.socialmedia li.github {
-    border: 1px solid #24292e;
+    border: 2px solid #24292e;
 }
 
 .sm-container ul.socialmedia li.github a {
@@ -246,7 +249,7 @@ section.content .connect {
 }
 
 .sm-container ul.socialmedia li.twitter {
-    border: 1px solid #1da1f2;
+    border: 2px solid #1da1f2;
 }
 
 .sm-container ul.socialmedia li.twitter a {
@@ -329,5 +332,4 @@ footer {
     section.content .connect > * {
         padding: 20px 2px;
     }
-
 }
