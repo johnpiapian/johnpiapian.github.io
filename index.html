@@ -6,6 +6,10 @@
     <title>Sut ~ Portfolio</title>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"/>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.2/css/all.min.css">
+    
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans&display=swap" rel="stylesheet">  
+    
     <link rel="stylesheet" href="css/style.css">
 </head>
 <body>
@@ -22,7 +26,7 @@
     </header>
     <nav>
         <ul>
-            <li><a href="#home" class="active">Sut</a></li>
+            <li><a href="index.html" class="active">Sut</a></li>
             <li><a href="#showcase">Projects</a></li>
         </ul>
     </nav>
@@ -33,6 +37,7 @@
                 <p>Can anything be better than <span class="code">&lt;coding/&gt;</span> to fullfill both passions!</p>
                 <p class="hash-tag">#front-end #back-end #minimalism</p> -->
                 <p>From a young age, I've always had a natural inclination for creation and technology. I've always been drawn to learning novel concepts, solving complex problems, and expanding my knowledge on computers, and its intricacies. These attributes sprouted in me a love for coding which I have been watering through years of studying and training.</p>
+                <p class="hash-tag">#front-end #back-end #minimalism</p>
             </article>
             <section class="skillset">
                 <section class="col languages">
@@ -88,7 +93,7 @@
                     </ul>
                 </div>
                 <div class="sendmessage">
-                    <form id="sendmessage">
+                    <form id="sendmessage" action="https://formspree.io/f/mwkwzknn" method="POST">
                         <div>
                             <label for="name">Name</label>
                             <input type="text" name="name" id="name" placeholder="Name...">
@@ -102,7 +107,7 @@
                             <textarea name="message" id="message" cols="30" rows="10"></textarea>
                         </div>
                         <div>
-                            <input type="submit" name="submit" id="submit" value="Send">
+                            <input class="submit" type="submit" name="submit" id="submit" value="Send">
                         </div>
                     </form>
                 </div>
@@ -112,7 +117,6 @@
     <footer>
         <p>© 2021 Sut Tuang</p>
     </footer>
-    <script src="https://smtpjs.com/v3/smtp.js"></script>
     <script src="js/script.js"></script>
 </body>
 </html>
