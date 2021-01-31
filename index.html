@@ -4,28 +4,113 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Sut Pian Tuang Portfolio</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.2/css/all.min.css">
     <link rel="stylesheet" href="css/style.css">
 </head>
 <body>
     <header>
-        <div class="info">
+        <section class="me">
             <div class="name">
-                <h1>Sut Pian Tuang</h1>
-                <h3>a.k.a johnpiapian</h3>
+                <h1 class="animate__animated animate__fadeInDown">Hey, I'm Sut.</h1>
+                <h3 class="animate__animated animate__fadeInUp">a.k.a johnpiapian</h3>
             </div>
-            <div class="skill">
-                <h1>Web & Software Developer</h1>
+            <div class="title">
+                <h1 class="animate__animated animate__jackInTheBox">I enjoy building <i>&lt;stuff/&gt;</i></h1>
             </div>
-        </div>
+        </section>
     </header>
     <nav>
         <ul>
-            <li><a href="#home">Home</a></li>
-            <li><a href="#showcase">Showcase</a></li>
+            <li><a href="#home" class="active">Sut</a></li>
+            <li><a href="#showcase">Projects</a></li>
         </ul>
     </nav>
     <main>
-        
+        <section class="content">
+            <article class="about">
+                <p>From a young age, I was extremely passionate about building things and as well as solving problems.</p>
+                <p>Can anything be better than <span class="code">&lt;coding/&gt;</span> to fullfill both passions!</p>
+                <p class="hash-tag">#front-end #back-end #minimalism</p>
+            </article>
+            <section class="skillset">
+                <section class="col languages">
+                    <h2>Languages</h2>
+                    <ul>
+                        <li>HTML</li>
+                        <li>CSS</li>
+                        <li>Javascript</li>
+                        <li>Java</li>
+                        <li>C#</li>
+                        <li>Python</li>
+                        <li>PHP</li>
+                        <li>SQL</li>
+                    </ul>
+                </section>
+                <section class="col frameworks">
+                    <h2>Fameworks & Libraries</h2>
+                    <ul>
+                        <li>.NET</li>
+                        <li>ASP.NET</li>
+                        <li>Node.js</li>
+                        <li>React</li>
+                        <li>jQuery</li>
+                    </ul>
+                </section>
+                <section class="col tools">
+                    <h2>Tools & Technologies</h2>
+                    <ul>
+                        <li>OOP</li>
+                        <li>MVC</li>
+                        <li>RESTful API</li>
+                        <li>Git & Github</li>
+                        <li>MSSQL</li>
+                        <li>MySQL</li>
+                        <li>MongoDB</li>
+                        <li>Linux/Unix Shell</li>
+                    </ul>
+                </section>
+            </section>
+            <section class="connect">
+                <h1>Let's connect</h1>
+                <div class="sm-container">
+                    <ul class="socialmedia">
+                        <li class="linkedin">
+                            <a href="https://www.linkedin.com/in/suttuang/" target="_blank" title="https://www.linkedin.com/in/suttuang/">LinkedIn <i class="fab fa-linkedin"></i></a>
+                        </li>
+                        <li class="github">
+                            <a href="https://github.com/johnpiapian" target="_blank" title="https://github.com/johnpiapian">Github <i class="fab fa-github-square"></i></a>
+                        </li>
+                        <li class="twitter">
+                            <a href="https://twitter.com/suttuang" target="_blank" title="https://twitter.com/suttuang">Twitter <i class="fab fa-twitter-square"></i></a>
+                        </li>
+                    </ul>
+                </div>
+                <div class="sendmessage">
+                    <form>
+                        <div>
+                            <label for="name">Name</label>
+                            <input type="text" name="name" id="name" placeholder="Name...">
+                        </div>
+                        <div>
+                            <label for="email">Email</label>
+                            <input type="email" name="email" id="email" placeholder="Email...">
+                        </div>
+                        <div>
+                            <label for="message">Message</label>
+                            <textarea name="message" id="message" cols="30" rows="10"></textarea>
+                        </div>
+                        <div>
+                            <input type="submit" name="submit" id="submit" value="Send">
+                        </div>
+                    </form>
+                </div>
+            </section>
+        </section>
     </main>
+    <footer>
+        <p>© 2021 Sut Tuang</p>
+    </footer>
+    <script src="js/script.js"></script>
 </body>
 </html>
