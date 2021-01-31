@@ -322,4 +322,12 @@ footer {
         border-bottom: 1px solid lightgray;
     }
 
+    section.content .connect {
+        padding: 0;
+    }
+
+    section.content .connect > * {
+        padding: 20px 2px;
+    }
+
 }
