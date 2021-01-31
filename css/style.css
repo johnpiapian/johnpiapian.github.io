@@ -258,6 +258,7 @@ section.content .connect {
     flex-direction: row;
     justify-content: center;
     padding: 20px;
+    width: 100%;
     /* border: 1px solid black; */
 }
 
@@ -296,4 +297,29 @@ footer {
     padding: 10px;
     text-align: center;
     background-color: #f7f7f7;
+}
+
+/* Mobile Style */
+@media only screen and (max-width: 600px) {
+    .me {
+        padding: 30px;
+    }
+
+    section.content .skillset {
+        flex-direction: column;
+    }
+
+    .skillset .col {
+        margin: 20px 0;
+    }
+
+    .skillset .col.languages {
+        border-bottom: 1px solid lightgray;
+    }
+
+    .skillset .col.frameworks {
+        border: none;
+        border-bottom: 1px solid lightgray;
+    }
+
 }
