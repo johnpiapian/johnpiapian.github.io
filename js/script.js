@@ -1,6 +1,6 @@
 String.prototype.isEmpty = function () {
     return (this.length === 0 || !this.trim());
-};
+}
 
 function ajax(method, url, data, success, error) {
     var xhr = new XMLHttpRequest();
