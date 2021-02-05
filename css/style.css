@@ -1,8 +1,6 @@
 /**
-
 Color schemes:-
 https://coolors.co/e63946-f1faee-a8dadc-457b9d-1d3557
-
 **/
 
 * {
@@ -85,6 +83,7 @@ nav {
     position: sticky;
     /* background-color: #94a1a8; */
     background-color: var(--color-4);
+    z-index: 1000;
 }
 
 nav ul {
