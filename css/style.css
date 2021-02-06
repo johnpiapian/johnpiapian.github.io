@@ -4,9 +4,9 @@ https://coolors.co/e63946-f1faee-a8dadc-457b9d-1d3557
 **/
 
 * {
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
 }
 
 :root {
@@ -24,6 +24,12 @@ https://coolors.co/e63946-f1faee-a8dadc-457b9d-1d3557
 a {
     color: black;
     text-decoration: none;
+}
+
+.reset {
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    appearance: none;
 }
 
 body {
@@ -136,7 +142,7 @@ section.content {
     /* border: 1px solid black; */
 }
 
-section.content > * {
+section.content>* {
     color: #2F4550;
     padding: 20px;
     margin: 10px 0;
@@ -272,23 +278,23 @@ section.content .connect {
     /* border: 1px solid black; */
 }
 
-.sendmessage form > div {
+.sendmessage form>div {
     margin: 10px 0;
 }
 
-.sendmessage form > div > * {
+.sendmessage form>div>* {
     display: block;
     width: 100%;
-} 
+}
 
-.sendmessage form > div > label {
+.sendmessage form>div>label {
     color: #777;
     padding: 10px 0;
     font-weight: bold;
 }
 
-.sendmessage form > div > input,
-.sendmessage form > div > textarea {
+.sendmessage form>div>input,
+.sendmessage form>div>textarea {
     font-family: inherit;
     font-size: 1em;
     padding: 10px 5px;
@@ -296,7 +302,7 @@ section.content .connect {
     border-radius: 2px;
 }
 
-.sendmessage form > div > textarea {
+.sendmessage form>div>textarea {
     height: 200px;
     max-height: 200px;
     min-height: 200px;
@@ -344,7 +350,7 @@ footer {
         padding: 0;
     }
 
-    section.content .connect > * {
+    section.content .connect>* {
         padding: 20px 2px;
     }
 }
