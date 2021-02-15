@@ -151,6 +151,8 @@ section.content>* {
 section.content .about {
     text-align: center;
     border-radius: 10px;
+    margin-top: 50px;
+    margin-bottom: 15px;
     border: 1px solid #dadada;
     box-shadow: 0px 2px 5px -5px black;
 }
@@ -171,7 +173,7 @@ section.content .about {
 section.content .skillset {
     display: flex;
     color: #444;
-    margin: 100px 0;
+    margin: 150px 0;
     padding: 20px 10px;
     border-radius: 10px;
     border: 1px solid #f0f0f0;
@@ -213,6 +215,7 @@ section.content .skillset {
 
 section.content .connect {
     /* background-color: whitesmoke; */
+    margin-top: 150px;
     box-shadow: 0px -2px 5px -5px black;
 }
 
