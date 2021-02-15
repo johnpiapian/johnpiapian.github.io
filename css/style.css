@@ -196,7 +196,7 @@ section.content .skillset {
     color: white;
     padding: 5px;
     text-align: center;
-    background-color: var(--color-6);
+    background-color: var(--color-4);
 }
 
 .skillset .col ul {
@@ -217,7 +217,7 @@ section.content .connect {
 }
 
 .connect h1 {
-    color: #858585;
+    color: var(--color-4);
     text-align: center;
     padding: 20px 10px;
     font-size: 2em;
@@ -234,7 +234,7 @@ section.content .connect {
     max-width: 500px;
     margin: 0 auto;
     border-radius: 5px;
-    border: 1px solid #858585;
+    border: 1px solid #777;
 }
 
 .sm-container ul.socialmedia li {
@@ -312,12 +312,12 @@ section.content .connect {
 
 .sendmessage form .submit {
     cursor: pointer;
-    color: whitesmoke;
+    color: var(--color-2);
     background-color: var(--color-5);
 }
 
 footer {
-    color: #969696;
+    color: var(--color-6);
     padding: 10px;
     text-align: center;
     background-color: #f7f7f7;
