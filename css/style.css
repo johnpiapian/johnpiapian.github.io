@@ -3,12 +3,6 @@ Color schemes:-
 https://coolors.co/e63946-f1faee-a8dadc-457b9d-1d3557
 **/
 
-* {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-}
-
 :root {
     --main-max-width: 1000px;
 
@@ -21,23 +15,37 @@ https://coolors.co/e63946-f1faee-a8dadc-457b9d-1d3557
     --color-6: #94a1a8;
 }
 
+/* General Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
 a {
     color: black;
     text-decoration: none;
 }
 
+/* Resuable component */
 .reset-button {
     -webkit-appearance: none;
     -moz-appearance: none;
     appearance: none;
 }
 
+.code, 
+.hash-tag {
+    color: var(--color-4b);
+}
+
+/* CSS start */
 body {
     font-family: 'Open Sans', sans-serif;
     margin-top: 60vh;
 }
 
-header {
+body > header {
     top: 0;
     z-index: -100;
     position: fixed;
@@ -54,36 +62,38 @@ header {
     background-size: cover;
 }
 
-.me {
+/* Header text */
+section.me {
     color: #444;
     padding: 20px 100px;
     background-color: #ffffff50;
     border: 1px solid #ececec;
 }
 
-.me .name {
+section.me .name {
     padding: 20px 0;
 }
 
-.me .name h1 {
+section.me .name h1 {
     font-size: 2em;
     letter-spacing: 4px;
 }
 
-.me .name h3 {
+section.me .name h3 {
     color: #777;
     font-weight: 500;
     letter-spacing: 2px;
 }
 
-.me .title {
+section.me .title {
     padding: 10px 0;
 }
 
-.me .title h1 {
+section.me .title h1.delay_animation {
     animation-delay: 1s;
 }
 
+/* Navigation bar */
 nav {
     top: 0;
     position: sticky;
@@ -124,6 +134,8 @@ nav ul li a:hover {
     border-top: 2px solid #F4F4F9;
 }
 
+
+/* Main content container (only one a page) */
 main {
     display: flex;
     justify-content: center;
@@ -134,20 +146,23 @@ main {
     align-items: center;
 }
 
-section.content {
+main > section.content {
     min-height: 1000px;
+    min-height: 500px;
     width: 100%;
     max-width: var(--main-max-width);
     padding: 10px;
-    /* border: 1px solid black; */
 }
 
-section.content>* {
+main > section.content>* {
     color: #2F4550;
     padding: 20px;
     margin: 10px 0;
 }
 
+/*  ***MAIN PAGE***  */
+
+/* About me/Introduction */
 section.content .about {
     text-align: center;
     border-radius: 10px;
@@ -165,11 +180,7 @@ section.content .about {
     animation-timing-function: ease-in;
 }
 
-.about .code,
-.about .hash-tag {
-    color: var(--color-4b);
-}
-
+/* Skills showcase section */
 section.content .skillset {
     display: flex;
     color: #444;
@@ -186,7 +197,6 @@ section.content .skillset {
     flex: 1;
     margin: 0;
     padding: 10px;
-    /* border: 1px solid black; */
 }
 
 .skillset .col.frameworks {
@@ -204,7 +214,6 @@ section.content .skillset {
 .skillset .col ul {
     list-style: none;
     text-align: center;
-    /* border: 1px solid black; */
 }
 
 .skillset .col ul li {
@@ -212,9 +221,8 @@ section.content .skillset {
     padding: 10px;
     margin: 5px 0;
 }
-
+/* Social Media Connection */
 section.content .connect {
-    /* background-color: whitesmoke; */
     margin-top: 150px;
     box-shadow: 0px -2px 5px -5px black;
 }
@@ -246,8 +254,6 @@ section.content .connect {
     opacity: .7;
     flex: 1;
     text-align: center;
-    /* border-radius: 5px; */
-    /* border: 1px solid cadetblue; */
 }
 
 .sm-container ul.socialmedia li:hover {
@@ -266,19 +272,18 @@ section.content .connect {
     color: #1da1f2;
 }
 
+/* Contact Form */
 .connect .sendmessage {
     display: flex;
     flex-direction: row;
     justify-content: center;
     padding: 20px;
     width: 100%;
-    /* border: 1px solid black; */
 }
 
 .sendmessage form {
     width: 100%;
     max-width: 500px;
-    /* border: 1px solid black; */
 }
 
 .sendmessage form>div {
@@ -319,7 +324,80 @@ section.content .connect {
     background-color: var(--color-5);
 }
 
-footer {
+/*  ***PROJECTS PAGE***  */
+
+/* projects list */
+section.project-container {
+    margin: 0 auto;
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    justify-content: space-evenly;
+}
+
+article.project {
+    margin: 50px 0;
+    width: 100%;
+    max-width: 400px;
+    box-shadow: 0px 0px 2px 0px black;
+    /* border: 4px solid #888; */
+}
+
+article.project header {
+    cursor: default;
+}
+
+article.project header h1 {
+    font-size: 1.2em;
+    font-weight: bold;
+    text-align: center;
+    padding: 10px;
+}
+
+article.project section.image-container {
+    /* border: 1px solid black; */
+}
+
+article.project section.image-container img {
+    display: block;
+    max-width: 100%;
+}
+
+article.project footer > p {
+    padding: 10px;
+}
+
+article.project footer p.hash-tag {
+    font-size: .9em;
+    text-align: left;
+}
+
+article.project footer p.description {
+    padding: 20px 10px;
+}
+
+article.project footer .links {
+    padding: 10px;
+    display: flex;
+    justify-content: space-around;
+    background-color: #f1f1f1;
+    border-top: 1px solid #ccc;
+}
+
+article.project footer .links a {
+    text-transform: uppercase;
+    font-weight: bolder;
+    color: #333;
+}
+
+article.project footer .links a:hover {
+    color: #777;
+}
+
+
+/* Top level footer */
+body > footer {
     color: var(--color-6);
     padding: 10px;
     text-align: center;
