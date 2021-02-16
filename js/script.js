@@ -4,13 +4,14 @@ String.prototype.isEmpty = function () {
 }
 
 function $get(id, tagName=null){
-    if(tagName === null){
+    if(id != null && tagName != null && document.getElementById(id) !== null){
+        if(document.getElementById(id).tagName === tagName.toUpperCase()){
+            return document.getElementById(id);
+        }
+    }else if(id !== null){
         return document.getElementById(id);
-    }else if(tagName != null && document.getElementById(id).tagName === tagName.toUpperCase()){
-        return document.getElementById(id);
-    }else{
-        return null;
     }
+    return null;
 }
 
 function $createElement(tagName, textContent=null, attributes=[], childs=[]){
