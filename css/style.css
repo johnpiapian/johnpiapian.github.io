@@ -337,7 +337,7 @@ section.project-container {
 }
 
 article.project {
-    margin: 50px 0;
+    margin: 50px 20px;
     width: 100%;
     max-width: 400px;
     box-shadow: 0px 0px 2px 0px black;
@@ -356,7 +356,7 @@ article.project header h1 {
 }
 
 article.project section.image-container {
-    /* border: 1px solid black; */
+    border-bottom: 1px solid #ccc;
 }
 
 article.project section.image-container img {
@@ -394,7 +394,6 @@ article.project footer .links a {
 article.project footer .links a:hover {
     color: #777;
 }
-
 
 /* Top level footer */
 body > footer {
