@@ -410,8 +410,8 @@ body > footer {
 
 /* Mobile Style */
 @media only screen and (max-width: 600px) {
-    .me {
-        padding: 30px;
+    section.me {
+        padding: 30px 10px;
     }
 
     section.content .skillset {
@@ -437,5 +437,9 @@ body > footer {
 
     section.content .connect>* {
         padding: 20px 2px;
+    }
+
+    article.project {
+        margin: 0px;
     }
 }
