@@ -329,6 +329,7 @@ section.content .connect {
 /* projects list */
 section.content > header.project-title {
     text-align: center;
+    border-bottom: 2px solid #b9b9b9;
 }
 
 section.project-container {
