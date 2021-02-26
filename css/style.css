@@ -327,6 +327,10 @@ section.content .connect {
 /*  ***PROJECTS PAGE***  */
 
 /* projects list */
+section.content > header.project-title {
+    text-align: center;
+}
+
 section.project-container {
     margin: 0 auto;
     width: 100%;
