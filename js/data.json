@@ -22,5 +22,13 @@
         "description": "A live chatting app that lets you send and receive texts from your friends instantaneously.",
         "liveHref": "http://chat.appzomi.ml/",
         "sourceHref": ""        
+    },
+    {
+        "title": "Java Todo",
+        "imgName": "java_todo.png",
+        "hashTag": "#Java",
+        "description": "A simple todo list app in CLI built using Java.",
+        "liveHref": "",
+        "sourceHref": "https://github.com/johnpiapian/Todo_JAVA"        
     }
 ]
