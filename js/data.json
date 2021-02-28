@@ -30,5 +30,13 @@
         "description": "A simple todo list app in CLI built using Java.",
         "liveHref": "",
         "sourceHref": "https://github.com/johnpiapian/Todo_JAVA"        
+    },
+    {
+        "title": "Java Gradebook",
+        "imgName": "java_gradebook.png",
+        "hashTag": "#Java",
+        "description": "Student gradebook written in Java.",
+        "liveHref": "",
+        "sourceHref": "https://github.com/johnpiapian/Gradebook_Java"        
     }
 ]
