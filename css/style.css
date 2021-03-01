@@ -328,8 +328,13 @@ section.content .connect {
 
 /* projects list */
 section.content > header.project-title {
+    background-color: #75757533;
+    /* border-bottom: 1px dashed #757575; */
+}
+
+section.content > header.project-title {
+    color: #535353;
     text-align: center;
-    border-bottom: 2px solid #b9b9b9;
 }
 
 section.project-container {
