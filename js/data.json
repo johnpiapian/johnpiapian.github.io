@@ -38,5 +38,13 @@
         "description": "Student gradebook written in Java.",
         "liveHref": "",
         "sourceHref": "https://github.com/johnpiapian/Gradebook_Java"        
+    },
+    {
+        "title": "Java Hangman Game",
+        "imgName": "java_hangman.png",
+        "hashTag": "#Java",
+        "description": "A console based hangman game in Java.",
+        "liveHref": "",
+        "sourceHref": "https://github.com/johnpiapian/Hangman_Java"        
     }
 ]
