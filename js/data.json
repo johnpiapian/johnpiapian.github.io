@@ -46,5 +46,13 @@
         "description": "A console based hangman game in Java.",
         "liveHref": "",
         "sourceHref": "https://github.com/johnpiapian/Hangman_Java"        
+    },
+    {
+        "title": "Java BMI Calculator",
+        "imgName": "java_bmi.png",
+        "hashTag": "#Java",
+        "description": "A GUI app written in Java for calculating BMI.",
+        "liveHref": "",
+        "sourceHref": "https://github.com/johnpiapian/myBMI_JAVA"        
     }
 ]

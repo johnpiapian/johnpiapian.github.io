@@ -332,7 +332,7 @@ section.content > header.project-title {
     /* border-bottom: 1px dashed #757575; */
 }
 
-section.content > header.project-title {
+section.content > header.project-title h1 {
     color: #535353;
     text-align: center;
 }
