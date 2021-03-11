@@ -1,5 +1,13 @@
 [
     {
+        "title": "Chat",
+        "imgName": "chat.png",
+        "hashTag": "#HTML #CSS #Javascript #Node.js #Socket.io",
+        "description": "A live chatting app that lets you send and receive texts from your friends instantaneously.",
+        "liveHref": "http://chat.appzomi.ml/",
+        "sourceHref": ""        
+    },
+    {
         "title": "Todo list",
         "imgName": "todo.png",
         "hashTag": "#HTML #CSS #Javascript",
@@ -14,14 +22,6 @@
         "description": "A web-based calculator inspired by Apple's calculator design.",
         "liveHref": "http://www.appzomi.ml/calculator/",
         "sourceHref": "https://github.com/johnpiapian/Simple-Calculator/tree/master/calculator"        
-    },
-    {
-        "title": "Chat",
-        "imgName": "chat.png",
-        "hashTag": "#HTML #CSS #Javascript #Node.js #Socket.io",
-        "description": "A live chatting app that lets you send and receive texts from your friends instantaneously.",
-        "liveHref": "http://chat.appzomi.ml/",
-        "sourceHref": ""        
     },
     {
         "title": "Java Todo",
