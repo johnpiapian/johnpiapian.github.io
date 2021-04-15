@@ -38,31 +38,27 @@ function $createElement(tagName, textContent=null, attributes=[], childs=[]){
     return res;
 }
 
-function ajax(method, url, data, success, error) {
-    var xhr = new XMLHttpRequest();
-    xhr.open(method, url);
-    xhr.setRequestHeader("Accept", "application/json");
-    xhr.onreadystatechange = function () {
-        if (xhr.readyState !== XMLHttpRequest.DONE) return;
-        if (xhr.status === 200) {
-            success(xhr.response, xhr.responseType);
-        } else {
-            error(xhr.status, xhr.response, xhr.responseType);
-        }
-    };
-    xhr.send(data);
-}
-
-
 // Event handlers
-function handleFormSubmission(e) {
-    let nameEl = e.target.name;
-    let emailEl = e.target.email;
-    let messageEl = e.target.message;
+async function handleFormSubmission(e) {
+    // Prevent redirection
+    e.preventDefault(); 
+     
+    let form = e.target;
+    let data = new FormData(form);
 
-    if (!nameEl.value.isEmpty() && !emailEl.value.isEmpty() && !messageEl.value.isEmpty()) {
-        var data = new FormData(e.target);
-        ajax(form.method, form.action, data, success, error);
+    if (!form.name.value.isEmpty() && !form.email.value.isEmpty() && !form.message.value.isEmpty()) {
+        fetch(form.action, {
+            method: form.method,
+            body: data,
+            headers: {
+                'Accept': 'application/json'
+            }
+        }).then(response => {
+            alert("Thanks for your submission!");
+            form.reset()
+        }).catch(error => {
+            alert("Oops! There was a problem submitting your form");
+        });
     } else {
         alert("Invalid input!");
     }
@@ -81,12 +77,12 @@ function createArticleElement(title, imgName, hashTag, description, liveHref, so
     let p1 = $createElement('p', hashTag, [['class', 'hash-tag']]);
     let p2 = $createElement('p', description, [['class', 'description']]);
 
-    // handle empty source or live links
+    // Handle empty source or live links
     let classLink1 = (liveHref.isEmpty()) ? ['class', 'unavail']: ['class', ''];
     liveHref = (liveHref.isEmpty()) ? "javascript:void(0)" : liveHref;
     let link1 = $createElement('a', 'Live', [['target', '_blank'], ['href', liveHref], classLink1]);
 
-    // handle empty source or live links
+    // Handle empty source or live links
     let classLink2 = (sourceHref.isEmpty()) ? ['class', 'unavail']: ['class', ''];
     sourceHref = (sourceHref.isEmpty()) ? "javascript:void(0)" : sourceHref;
     let link2 = $createElement('a', 'Source code', [['target', '_blank'], ['href', sourceHref], classLink2]);
