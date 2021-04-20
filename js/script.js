@@ -79,13 +79,13 @@ function createArticleElement(title, imgName, hashTag, description, liveHref, so
 
     // Handle empty source or live links
     let classLink1 = (liveHref.isEmpty()) ? ['class', 'unavail']: ['class', ''];
-    liveHref = (liveHref.isEmpty()) ? "javascript:void(0)" : liveHref;
     let link1 = $createElement('a', 'Live', [['target', '_blank'], ['href', liveHref], classLink1]);
+    if(liveHref.isEmpty()){ link1.setAttribute("onclick", "return false;");}
 
     // Handle empty source or live links
     let classLink2 = (sourceHref.isEmpty()) ? ['class', 'unavail']: ['class', ''];
-    sourceHref = (sourceHref.isEmpty()) ? "javascript:void(0)" : sourceHref;
     let link2 = $createElement('a', 'Source code', [['target', '_blank'], ['href', sourceHref], classLink2]);
+    if(sourceHref.isEmpty()){ link2.setAttribute("onclick", "return false;");}
 
     let linksEl = $createElement('div', null, [['class', 'links']], [link1, link2]);
     let footerEl = $createElement('footer', null, [], [p1, p2, linksEl]);
