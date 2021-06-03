@@ -328,8 +328,9 @@ section.content .connect {
 
 /* projects list */
 section.content > header.project-title {
-    background-color: #75757533;
-    /* border-bottom: 1px dashed #757575; */
+    background-color: #d4d4d45d;
+    border-radius: 10px;
+    margin: 0 50px;
 }
 
 section.content > header.project-title h1 {
@@ -447,6 +448,10 @@ body > footer {
 
     section.content .connect>* {
         padding: 20px 2px;
+    }
+
+    section.content > header.project-title {
+        margin: 0;
     }
 
     article.project {
