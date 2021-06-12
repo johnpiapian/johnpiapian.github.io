@@ -11,9 +11,17 @@
         "title": "Chat",
         "imgName": "chat.png",
         "hashTag": "#HTML #CSS #Javascript #Node.js #Socket.io",
-        "description": "A live chatting app that lets you send and receive texts from your friends instantaneously.",
+        "description": "A live chatting website that lets you send and receive texts from your friends instantaneously.",
         "liveHref": "http://chat.appzomi.ml/",
         "sourceHref": ""        
+    },
+    {
+        "title": "Chat IOS",
+        "imgName": "egochat_ios.png",
+        "hashTag": "#IOS #Swift #Socket.io",
+        "description": "A live chatting iOS app that lets you send and receive texts from your friends instantaneously.",
+        "liveHref": "",
+        "sourceHref": "https://github.com/johnpiapian/egoChat_iOS"        
     },
     {
         "title": "Todo list",
