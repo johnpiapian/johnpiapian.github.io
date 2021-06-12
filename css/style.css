@@ -168,8 +168,10 @@ section.content .about {
     border-radius: 10px;
     margin-top: 50px;
     margin-bottom: 15px;
-    border: 1px solid #dadada;
-    box-shadow: 0px 2px 5px -5px black;
+    /* border: 1px solid #dadada; */
+    /* box-shadow: 0px 2px 5px -5px black; */
+    border-left: 1px solid #dadada;
+    border-right: 1px solid #dadada;
 }
 
 .about p {
