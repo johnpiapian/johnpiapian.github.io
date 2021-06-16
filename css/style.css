@@ -69,7 +69,8 @@ section.me {
     background-color: #ffffff50;
     border: 1px solid #ececec;
     display: flex;
-    column-gap: 10px;
+    -moz-column-gap: 10px;
+         column-gap: 10px;
 }
 
 section.me div.text {
@@ -97,7 +98,8 @@ section.me .title {
 }
 
 section.me .title h1.delay_animation {
-    animation-delay: 1s;
+    -webkit-animation-delay: 1s;
+            animation-delay: 1s;
 }
 
 /* Picture */
@@ -109,16 +111,20 @@ section.me div.image {
     max-height: 200px;
     border-radius: 50%;
     overflow: hidden;
+    perspective: 1;
 }
 
 section.me div.image img {
     max-width: 100%;
+    -ms-transform: scale(1.3) translate(5px, 10px);
+    -webkit-transform: scale(1.3) translate(5px, 10px);
     transform: scale(1.3) translate(5px, 10px);
 }
 
 /* Navigation bar */
 nav {
     top: 0;
+    position: -webkit-sticky;
     position: sticky;
     /* background-color: #94a1a8; */
     background-color: var(--color-4);
@@ -152,8 +158,10 @@ nav ul li a.active {
 
 nav ul li a:hover {
     color: white;
-    animation: headShake;
-    animation-duration: 1s;
+    -webkit-animation: headShake;
+            animation: headShake;
+    -webkit-animation-duration: 1s;
+            animation-duration: 1s;
     border-top: 2px solid #F4F4F9;
 }
 
@@ -200,9 +208,12 @@ section.content .about {
 .about p {
     padding: 10px;
     line-height: 2;
-    animation: fadeIn;
-    animation-duration: 2.5s;
-    animation-timing-function: ease-in;
+    -webkit-animation: fadeIn;
+            animation: fadeIn;
+    -webkit-animation-duration: 2.5s;
+            animation-duration: 2.5s;
+    -webkit-animation-timing-function: ease-in;
+            animation-timing-function: ease-in;
 }
 
 /* Skills showcase section */
