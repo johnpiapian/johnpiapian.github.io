@@ -62,12 +62,19 @@ body > header {
     background-size: cover;
 }
 
-/* Header text */
+/* Header text & Image */
 section.me {
     color: #444;
-    padding: 20px 100px;
+    padding: 20px 50px;
     background-color: #ffffff50;
     border: 1px solid #ececec;
+    display: flex;
+    column-gap: 10px;
+}
+
+section.me div.text {
+    /* border: 1px solid black; */
+    padding: 0 10px;
 }
 
 section.me .name {
@@ -91,6 +98,22 @@ section.me .title {
 
 section.me .title h1.delay_animation {
     animation-delay: 1s;
+}
+
+/* Picture */
+section.me div.image {
+    display: flex;
+    align-items: center;
+    justify-items: center;
+    max-width: 200px;
+    max-height: 200px;
+    border-radius: 50%;
+    overflow: hidden;
+}
+
+section.me div.image img {
+    max-width: 100%;
+    transform: scale(1.3) translate(5px, 10px);
 }
 
 /* Navigation bar */
@@ -425,6 +448,8 @@ body > footer {
 @media only screen and (max-width: 600px) {
     section.me {
         padding: 30px 10px;
+        flex-direction: column-reverse;
+        align-items: center;
     }
 
     section.content .skillset {
