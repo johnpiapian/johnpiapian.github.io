@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <title>Contact</title>
+  <meta name="description" content="">
+  <meta name="keywords" content="">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="icon" href="imgs/logo.png">
+  <link rel="stylesheet" href="css/style.css">
+  <link rel="stylesheet" media="screen and (max-width: 1000px)" href="css/mobile-style.css">
+  <link rel="stylesheet" type="text/css" href="https://fonts.googleapis.com/css?family=Open+Sans">
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+</head>
+<body>
+
+  <nav>
+    <ol>
+      <span class="logo">
+        <img src="imgs/logo.png" alt="Logo">
+      </span>
+    </ol>
+    <ul>
+      <li class="menu">
+        <a href="javascript:void(0)">
+          <i class="fa fa-bars"></i>
+        </a>
+      </li>
+      <li><a href="index.html">HOME</a></li>
+      <li class="hasDropDown">
+        <a href="javascript:void(0)">2019-20 SCHOOL YEAR</a>
+        <ul>
+          <li><a href="school-year-program.html">2019-20 School Year Program</a></li>
+          <li><a href="school-year-registration.html">School Year Registration</a></li>
+          <li><a href="performance-team.html">Performance Team</a></li>
+        </ul>
+      </li>
+      <li class="hasDropDown">
+        <a href="javascript:void(0)">ABOUT US</a>
+        <ul>
+          <li><a href="our-team.html">Our Team</a></li>
+          <li><a href="our-vision-mission.html">Our Vision & Mission</a></li>
+          <li><a href="our-culture.html">Our Culture</a></li>
+        </ul>
+      </li>
+      <li class="active"><a href="contact.html">CONTACT</a></li>
+    </ul>
+  </nav>
+  
+  <main class="contact">
+    <section class="intro">
+      <article>
+        <h1>Contact Us</h1>
+      </article>
+    </section>
+    <section class="content">
+      <article class="form">
+        <form action="contact.php" method="post">
+          <input id="name" type="text" name="name" placeholder="Name"> 
+          <input id="email" type="email" name="email" placeholder="Email">
+          <textarea name="message" id="message" cols="30" rows="10" placeholder="Message"></textarea>
+          <input type="submit" value="submit">
+        </form>
+      </article>
+      <article class="info">
+        <h2>5678 Dance Studio</h2>
+        <p>1195 Summit Avenue, Oconomowoc, Wisconsin 53066, United States</p>
+        <p><a href="tel:2625601177">(262) 560-1177</a></p>
+        <p><a href="mailto:5678danceoconomowoc@gmail.com">5678danceoconomowoc@gmail.com</a></p>
+      </article>
+    </section>
+  </main>
+
+  <footer>
+    <p>Copyright &copy; 2019</p>
+  </footer>
+
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+  <script src="js/master.js"></script>
+</body>
+</html>

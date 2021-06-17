@@ -16,8 +16,16 @@
         "sourceHref": ""        
     },
     {
+        "title": "5678dancestudio.net",
+        "imgName": "5678dancestudio.net.jpg",
+        "hashTag": "#HTML #CSS #Javascript",
+        "description": "A Front-end development project of a rebuild of 5678dancestudio.net website from scratch for education purposes. No copyright infringement intended.",
+        "liveHref": "projects/5678dancestudio.net",
+        "sourceHref": "https://github.com/johnpiapian/5678dancestudio.net"        
+    },
+    {
         "title": "Chat IOS",
-        "imgName": "egochat_ios.png",
+        "imgName": "egochat_ios.jpg",
         "hashTag": "#IOS #Swift #Socket.io",
         "description": "A live chatting iOS app that lets you send and receive texts from your friends instantaneously.",
         "liveHref": "",

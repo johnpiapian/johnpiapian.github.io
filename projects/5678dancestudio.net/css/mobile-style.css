@@ -1,0 +1,116 @@
+/*-------- Mobile Phone/ Smaller Screen Styles --------*/
+
+/* Navigation */
+nav {
+  background-color: rgba(29, 29, 31, .8);
+}
+
+nav ul li a:hover, 
+nav ul li.active a {
+  /* background: #444444; */
+  border-bottom: 3px solid rgba(0, 0, 0, 0);
+}
+
+nav ul li:not(.menu){
+  display: none;
+}
+
+nav ul.activate li {
+  display: initial;
+}
+
+nav ul li.menu {
+  display: block;
+}
+
+nav ul li > ul {
+  position: static;
+  display: none;
+  text-align: right;
+  margin-right: 24px;
+  border-right: 1px solid white;
+  background-color: rgba(88, 88, 88, 0.5);
+}
+
+nav ul li ul li a {
+  color: #d8d8d8;
+  font-weight: normal;
+}
+
+nav ul li:hover ul{
+  display: none;
+}
+
+nav ul li:hover > a::after {
+  -webkit-transform: rotate(180deg);
+          transform: rotate(180deg);
+}
+
+nav ul li.expanded ul {
+  display: block;
+}
+
+nav ul li.expanded > a::after {
+  -webkit-transform: rotate(0deg);
+          transform: rotate(0deg);
+}
+/* End Navigation */
+
+
+section.ContentCards article {
+  padding: 20px 10px;
+}
+
+section.ContentCards {
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+section.intro article h1{
+  text-align: center;
+}
+
+section.intro article p{
+  margin: auto;
+}
+
+main.contact section.content, 
+main.two-columns section.content {
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+main.contact section.content article, 
+main.two-columns section.content article {
+  padding: 10;
+}
+
+main.contact section.content article.form form{
+  width: 100%;
+  margin: auto;
+}
+
+section.ContentCards:hover article:not(:hover) img {
+  -webkit-filter: grayscale(0);
+  filter: grayscale(0);
+}
+
+section.ContentCards:hover article:not(:hover) h2, 
+section.ContentCards:hover article:not(:hover) p {
+  color: #d8d8d8;
+}
+
+main.two-columns section.content article.picture {
+  max-width: 100%;
+}
+
+main.our-team section.content {
+  flex-direction: column;
+}
