@@ -10,7 +10,7 @@ https://coolors.co/e63946-f1faee-a8dadc-457b9d-1d3557
     --color-2: #F1FAEE;
     --color-3: #A8DADC;
     --color-4: #457B9D;
-    --color-4a:#054e7299;
+    --color-4a: #054e72c0;
     --color-4b: #64acda;
     --color-5: #1D3557;
     --color-6: #94a1a8;
@@ -35,7 +35,7 @@ a {
     appearance: none;
 }
 
-.code, 
+.code,
 .hash-tag {
     color: var(--color-4b);
 }
@@ -46,7 +46,7 @@ body {
     margin-top: 60vh;
 }
 
-body > header {
+body>header {
     top: 0;
     z-index: -100;
     position: fixed;
@@ -71,7 +71,7 @@ section.me {
     border: 1px solid #ececec;
     display: flex;
     -moz-column-gap: 10px;
-         column-gap: 10px;
+    column-gap: 10px;
 }
 
 section.me div.text {
@@ -100,7 +100,7 @@ section.me .title {
 
 section.me .title h1.delay_animation {
     -webkit-animation-delay: 1s;
-            animation-delay: 1s;
+    animation-delay: 1s;
 }
 
 /* Picture */
@@ -168,9 +168,9 @@ nav ul li a.active {
 nav ul li a:hover {
     color: white;
     -webkit-animation: headShake;
-            animation: headShake;
+    animation: headShake;
     -webkit-animation-duration: 1s;
-            animation-duration: 1s;
+    animation-duration: 1s;
     border-top: 2px solid #F4F4F9;
 }
 
@@ -186,7 +186,7 @@ main {
     align-items: center;
 }
 
-main > section.content {
+main>section.content {
     min-height: 1000px;
     min-height: 500px;
     width: 100%;
@@ -194,7 +194,7 @@ main > section.content {
     padding: 10px;
 }
 
-main > section.content>* {
+main>section.content>* {
     color: #2F4550;
     padding: 20px;
     margin: 10px 0;
@@ -218,11 +218,11 @@ section.content .about {
     padding: 10px;
     line-height: 2;
     -webkit-animation: fadeIn;
-            animation: fadeIn;
+    animation: fadeIn;
     -webkit-animation-duration: 2.5s;
-            animation-duration: 2.5s;
+    animation-duration: 2.5s;
     -webkit-animation-timing-function: ease-in;
-            animation-timing-function: ease-in;
+    animation-timing-function: ease-in;
 }
 
 /* Skills showcase section */
@@ -266,6 +266,7 @@ section.content .skillset {
     padding: 10px;
     margin: 5px 0;
 }
+
 /* Social Media Connection */
 section.content .connect {
     margin-top: 150px;
@@ -372,13 +373,13 @@ section.content .connect {
 /*  ***PROJECTS PAGE***  */
 
 /* projects list */
-section.content > header.project-title {
+section.content>header.project-title {
     background-color: #d4d4d45d;
     border-radius: 10px;
     margin: 0 50px;
 }
 
-section.content > header.project-title h1 {
+section.content>header.project-title h1 {
     color: #535353;
     text-align: center;
 }
@@ -421,7 +422,7 @@ article.project section.image-container img {
     max-width: 100%;
 }
 
-article.project footer > p {
+article.project footer>p {
     padding: 10px;
 }
 
@@ -457,7 +458,7 @@ article.project footer .links a:hover {
 }
 
 /* Top level footer */
-body > footer {
+body>footer {
     color: var(--color-6);
     padding: 10px;
     text-align: center;
@@ -497,7 +498,7 @@ body > footer {
         padding: 20px 2px;
     }
 
-    section.content > header.project-title {
+    section.content>header.project-title {
         margin: 0;
     }
 
