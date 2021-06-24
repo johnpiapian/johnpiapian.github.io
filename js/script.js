@@ -66,6 +66,18 @@ async function handleFormSubmission(e) {
     return false;
 }
 
+function scrollHandler(){
+    let nav = document.getElementsByTagName("NAV")[0];
+    let pos = nav.offsetTop;
+
+    if (document.documentElement.scrollTop < pos) {
+        nav.classList.remove("scrolled");
+    }else{
+        nav.classList.add("scrolled");
+    }
+
+}
+
 // General Functions
 function createArticleElement(title, imgName, hashTag, description, liveHref, sourceHref){
     let h1El = $createElement('h1', title);
@@ -108,7 +120,10 @@ function loadProjects(){
     });
 }
 
+
 function app() {
+
+    window.onscroll = scrollHandler;
 
     if ($get('sendmessage') !== null) {
         $get('sendmessage').onsubmit = handleFormSubmission;

@@ -10,6 +10,7 @@ https://coolors.co/e63946-f1faee-a8dadc-457b9d-1d3557
     --color-2: #F1FAEE;
     --color-3: #A8DADC;
     --color-4: #457B9D;
+    --color-4a:#054e7299;
     --color-4b: #64acda;
     --color-5: #1D3557;
     --color-6: #94a1a8;
@@ -130,6 +131,13 @@ nav {
     /* background-color: #94a1a8; */
     background-color: var(--color-4);
     z-index: 1000;
+    transition: all 500ms ease-in;
+}
+
+nav.scrolled {
+    background-color: var(--color-4a);
+    -webkit-backdrop-filter: blur(5px);
+    backdrop-filter: blur(5px);
 }
 
 nav ul {
