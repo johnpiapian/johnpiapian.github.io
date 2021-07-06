@@ -402,6 +402,8 @@ article.project-item {
     /* box-shadow: 0px 0px 2px 0px black; */
     border: 2px solid #ddd;
     box-shadow: 0px 0px 20px -10px #5a5a5a;
+    border-radius: 5px;
+    overflow: hidden;
 }
 
 article.project-item header {
