@@ -102,7 +102,7 @@ function createArticleElement(title, imgName, hashTag, description, liveHref, so
     let linksEl = $createElement('div', null, [['class', 'links']], [link1, link2]);
     let footerEl = $createElement('footer', null, [], [p1, p2, linksEl]);
 
-    let articleEl = $createElement('article', null, [['class', 'project']], [headerEl, sectionEl, footerEl]);
+    let articleEl = $createElement('article', null, [['class', 'project-item']], [headerEl, sectionEl, footerEl]);
 
     return articleEl;
 }

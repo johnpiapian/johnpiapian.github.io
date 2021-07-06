@@ -394,7 +394,7 @@ section.project-container {
     justify-content: space-around;
 }
 
-article.project {
+article.project-item {
     margin: 50px 20px;
     width: 100%;
     max-width: 400px;
@@ -404,40 +404,40 @@ article.project {
     box-shadow: 0px 0px 20px -10px #5a5a5a;
 }
 
-article.project header {
+article.project-item header {
     cursor: default;
 }
 
-article.project header h1 {
+article.project-item header h1 {
     font-size: 1.2em;
     font-weight: bold;
     text-align: center;
     padding: 10px;
 }
 
-article.project section.image-container {
+article.project-item section.image-container {
     border-bottom: 1px solid #ccc;
 }
 
-article.project section.image-container img {
+article.project-item section.image-container img {
     display: block;
     max-width: 100%;
 }
 
-article.project footer>p {
+article.project-item-item footer>p {
     padding: 10px;
 }
 
-article.project footer p.hash-tag {
+article.project-item footer p.hash-tag {
     font-size: .9em;
     text-align: left;
 }
 
-article.project footer p.description {
+article.project-item footer p.description {
     padding: 20px 10px;
 }
 
-article.project footer .links {
+article.project-item footer .links {
     padding: 10px;
     display: flex;
     justify-content: space-around;
@@ -445,17 +445,17 @@ article.project footer .links {
     border-top: 1px solid #ccc;
 }
 
-article.project footer .links a {
+article.project-item footer .links a {
     text-transform: uppercase;
     font-weight: bolder;
     color: #333;
 }
 
-article.project footer .links a.unavail {
+article.project-item footer .links a.unavail {
     cursor: not-allowed;
 }
 
-article.project footer .links a:hover {
+article.project-item footer .links a:hover {
     color: #777;
 }
 
@@ -504,7 +504,7 @@ body>footer {
         margin: 0;
     }
 
-    article.project {
+    article.project-item {
         margin: 50px 0px;
     }
 }
