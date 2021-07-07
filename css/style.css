@@ -8,11 +8,13 @@ https://coolors.co/e63946-f1faee-a8dadc-457b9d-1d3557
 
     --color-1: #E63946;
     --color-2: #F1FAEE;
+    --color-2b: #e9e9e9;
     --color-3: #A8DADC;
     --color-4: #457B9D;
     --color-4a: #054e72c0;
     --color-4b: #64acda;
     --color-5: #1D3557;
+    --color-5b: #11223a;
     --color-6: #94a1a8;
 }
 
@@ -368,6 +370,12 @@ section.content .connect {
     cursor: pointer;
     color: var(--color-2);
     background-color: var(--color-5);
+    transition: all 200ms ease-in;
+}
+
+.sendmessage form .submit:hover {
+    color: var(--color-2b);
+    background-color: var(--color-5b);
 }
 
 /*  ***PROJECTS PAGE***  */
