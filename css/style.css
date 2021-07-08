@@ -370,7 +370,6 @@ section.content .connect {
     cursor: pointer;
     color: var(--color-2);
     background-color: var(--color-5);
-    transition: all 200ms ease-in;
 }
 
 .sendmessage form .submit:hover {
@@ -434,7 +433,7 @@ article.project-item section.image-container img {
     max-width: 100%;
 }
 
-article.project-item-item footer>p {
+article.project-item footer>p {
     padding: 10px;
 }
 
