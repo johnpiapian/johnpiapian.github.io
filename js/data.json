@@ -60,7 +60,7 @@
         "imgName": "java_todo.png",
         "hashTag": "#Java",
         "description": "A simple todo list app in CLI built using Java.",
-        "liveHref": "",
+        "liveHref": "imgs/java_todo.gif",
         "sourceHref": "https://github.com/johnpiapian/Todo_JAVA"        
     },
     {
@@ -68,7 +68,7 @@
         "imgName": "java_gradebook.png",
         "hashTag": "#Java",
         "description": "Student gradebook written in Java.",
-        "liveHref": "",
+        "liveHref": "imgs/java_gradebook.gif",
         "sourceHref": "https://github.com/johnpiapian/Gradebook_Java"        
     },
     {
@@ -76,7 +76,7 @@
         "imgName": "java_hangman.png",
         "hashTag": "#Java",
         "description": "A console based hangman game in Java.",
-        "liveHref": "",
+        "liveHref": "imgs/java_hangman.gif",
         "sourceHref": "https://github.com/johnpiapian/Hangman_Java"        
     },
     {
@@ -84,7 +84,7 @@
         "imgName": "java_bmi.png",
         "hashTag": "#Java",
         "description": "A GUI app written in Java for calculating BMI.",
-        "liveHref": "",
+        "liveHref": "imgs/java_bmi.gif",
         "sourceHref": "https://github.com/johnpiapian/myBMI_JAVA"        
     }
 ]
