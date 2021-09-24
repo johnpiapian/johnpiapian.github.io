@@ -372,12 +372,12 @@ section.content .connect {
 .sendmessage form .submit {
     cursor: pointer;
     color: var(--color-2);
-    background-color: var(--color-6);
+    background-color: var(--color-4);
 }
 
 .sendmessage form .submit:hover {
     color: var(--color-2b);
-    background-color: var(--color-4);
+    background-color: var(--color-4a);
 }
 
 /*  ***PROJECTS PAGE***  */
