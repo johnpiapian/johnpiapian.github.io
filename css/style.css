@@ -259,6 +259,7 @@ section.content .skillset {
     text-align: center;
     background-color: var(--color-4);
     cursor: default;
+    border-radius: 3px;
 }
 
 .skillset .col ul {
@@ -378,6 +379,12 @@ section.content .connect {
 .sendmessage form .submit:hover {
     color: var(--color-2b);
     background-color: var(--color-4a);
+}
+
+.sendmessage form>div>input,
+.sendmessage form>div>textarea,
+.sendmessage form .submit {
+    border-radius: 5px;
 }
 
 /*  ***PROJECTS PAGE***  */
