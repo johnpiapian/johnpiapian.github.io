@@ -120,18 +120,30 @@ function loadProjects(){
     });
 }
 
+// Copyright year
+function getYear(){
+    return new Date().getFullYear();
+}
+
 
 function app() {
 
     window.onscroll = scrollHandler;
+    // Project loading
+    if($get('project-container', 'section') !== null){
+        loadProjects();
+    }
 
+    // Form submission
     if ($get('sendmessage') !== null) {
         $get('sendmessage').onsubmit = handleFormSubmission;
     }
 
-    if($get('project-container', 'section') !== null){
-        loadProjects();
-    }
+    // Insert copyright year
+    $get('copyright-date').textContent = getYear();
+    
+
+    console.log(getYear());
 }
 
 app();
