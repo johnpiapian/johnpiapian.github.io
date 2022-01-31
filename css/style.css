@@ -298,6 +298,7 @@ section.content .connect {
     margin: 0 auto;
     border-radius: 5px;
     border: 1px solid #777;
+    border: 1px solid #999;
 }
 
 .sm-container ul.socialmedia li {
