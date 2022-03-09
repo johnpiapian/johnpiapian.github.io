@@ -10,7 +10,7 @@ https://coolors.co/e63946-f1faee-a8dadc-457b9d-1d3557
     --color-2b: #e9e9e9;
     --color-3: #A8DADC;
     --color-4: #457B9D;
-    --color-4a: #0b6fa1a1;
+    --color-4a: #0b6fa1d0;
     --color-4b: #64acda;
     --color-5: #1D3557;
     --color-5b: #11223a;
@@ -85,7 +85,7 @@ section.me .name {
 }
 
 section.me .name h1 {
-    color: #555;
+    color: #31415a;
     font-size: 2em;
     letter-spacing: 4px; 
 }
@@ -103,14 +103,14 @@ section.me .title {
 section.me .title h1.code {
     color: #555;
     letter-spacing: 2px;
-    padding: 5px 7px;
+    padding: 5px 0px;
+    background-color: var(--color-4a);
     /* Background effect */
     background-color: #94a1a8;
     background-image: linear-gradient(135deg, #94a1a8 0%, #457B9D 100%);
     background-clip: text;
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
-    border: 2px solid #94a1a8;
 }
 
 section.me .title h1.delay_animation {
@@ -130,12 +130,22 @@ section.me div.image {
     perspective: 1;
     border: 4px solid #94949480;
     border-color: #838e9480;
+    transition: all 150ms ease-out;
+}
+
+section.me div.image:hover {
+    border-color: #3c77a5d7;
 }
 
 section.me div.image img {
     max-width: 100%;
     /* transform: scale(1.3) translate(5px, 10px); */
     transform: scale(1.3) translate(5px, 10px);
+    transition: all 150ms ease-out;
+}
+
+section.me div.image img:hover {
+    filter: brightness(110%);
 }
 
 /* Navigation bar */
