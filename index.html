@@ -9,9 +9,8 @@
     <title>Sut Tuang ~ Portfolio</title>
     
     <link rel="icon" href="imgs/core/favicon.png" type="image/png">
-    
+
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"/>
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.2/css/all.min.css">
     
     <!-- Fonts -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -39,21 +38,23 @@
         </section>
     </header>
     <nav>
-        <ul>
+        <ul id="menu-links">
             <li><a href="./" class="active">Sut</a></li>
-            <li><a id="inlineLink" href="#skillset">Skillset</a></li>
-            <li><a href="projects.html">Projects</a></li>
+            <li><a id="linkToElement" class="linkToElement" href="#skillset">Skillset</a></li>
+            <li><a id="linkToElement" class="linkToElement" href="#project-container-sample">Projects</a></li>
+            <li><a id="linkToElement" class="linkToElement" href="#connect">Contact</a></li>
+            <!-- <li><a href="projects.html">Projects</a></li> -->
         </ul>
     </nav>
     <main>
         <section class="content">
-            <article class="about">
+            <article class="about item">
                 <p>From a young age, I've always had a natural inclination for computers and technology. I've always been drawn to learning novel concepts, solving complex problems, and expanding my knowledge on computers and its intricacies. These attributes sprouted in me a love for coding which I have been watering through years of studying and training.
                 <br/><br/>
                 I have hands-on experience using the latest tools and technologies to create and implement front-end and back-end web applications. I enjoy being challenged and engaging with projects that require me to work outside my comfort and knowledge set, as well as continuing to learn new programming languages and development techniques.</p>
                 <p class="hash-tag">#front-end #back-end #minimalism</p>
             </article>
-            <section id="skillset" class="skillset">
+            <section id="skillset" class="skillset item">
                 <section class="col languages">
                     <h2>Languages</h2>
                     <ul>
@@ -88,10 +89,12 @@
                     </ul>
                 </section>
             </section>
-            <section id="project-container-sample" class="project-container">
-                
+            <section class="projects item">
+                <h1>Projects</h1>
+                <section id="project-container-sample" class="project-container sample"></section>
+                <div class="link"><a href="/projects.html">View All Projects >></a></div>
             </section>
-            <section class="connect">
+            <section id="connect" class="connect item">
                 <h1>Let's connect</h1>
                 <div class="sm-container">
                     <ul class="socialmedia">
@@ -109,15 +112,15 @@
                 <div class="sendmessage">
                     <form id="sendmessage" action="https://formspree.io/f/mwkwzknn" method="POST">
                         <div>
-                            <label for="name">Name</label>
-                            <input type="text" name="name" id="name" placeholder="Name...">
+                            <label for="name">Name: *</label>
+                            <input type="text" name="name" id="name" placeholder="">
                         </div>
                         <div>
-                            <label for="email">Email</label>
-                            <input type="email" name="email" id="email" placeholder="Email...">
+                            <label for="email">Email: *</label>
+                            <input type="email" name="email" id="email" placeholder="">
                         </div>
                         <div>
-                            <label for="message">Message</label>
+                            <label for="message">Message: *</label>
                             <textarea name="message" id="message" cols="30" rows="10"></textarea>
                         </div>
                         <div>

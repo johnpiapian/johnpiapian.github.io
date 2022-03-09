@@ -134,7 +134,10 @@ async function handleFormSubmission(e) {
     return false;
 }
 
-function handleScrollToElement(e){
+function handleScrollToElement(e){    
+    if(e.target.id != "linkToElement") return;
+
+    // prevent page reload
     e.preventDefault();
 
     let clickedElement = e.target;
@@ -145,11 +148,11 @@ function handleScrollToElement(e){
 }
 
 function app() {
-    // load projects
+    // Load projects
     if($get('project-container', 'section') != null)
         loadProjects($get('project-container', 'section'));
     
-    // load sample projects
+    // Load sample projects
     if($get('project-container-sample', 'section') != null)
         loadProjects($get('project-container-sample', 'section'), 2);
 
@@ -164,8 +167,7 @@ function app() {
     if ($get('sendmessage') != null) $get('sendmessage').onsubmit = handleFormSubmission;
     
     // Scroll to element
-    if ($get('inlineLink') != null) $get('inlineLink', 'a').onclick = handleScrollToElement;    
-    
+    if ($get('menu-links') != null) $get('menu-links').onclick = handleScrollToElement;    
 }
 
 app();
