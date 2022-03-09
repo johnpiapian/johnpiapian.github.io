@@ -340,7 +340,6 @@ section.content .projects .link a:hover {
     color: wheat;
 }
 
-
 /* Social Media Connection */
 section.content .connect {
     margin-top: 150px;
@@ -554,6 +553,10 @@ body>footer {
 
 /* Mobile Style */
 @media only screen and (max-width: 600px) {
+    body {
+        min-height: 400px;
+    }
+    
     section.me {
         padding: 30px 10px;
         flex-direction: column-reverse;

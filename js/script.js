@@ -159,9 +159,7 @@ function app() {
     // Insert copyright year
     $get('copyright-date').textContent = getYear();
 
-
     // **Event listener
-
     // Form submission
     // Validation is required as not all pages have sendmessage form
     if ($get('sendmessage') != null) $get('sendmessage').onsubmit = handleFormSubmission;
