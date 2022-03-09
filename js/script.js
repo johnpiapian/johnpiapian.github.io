@@ -1,8 +1,14 @@
-// Reusable components
+// **Reusable components
 String.prototype.isEmpty = function () {
     return (this.length === 0 || !this.trim());
 }
 
+/**
+ * 
+ * @param {"enter the id of the element"} id 
+ * @param {"you may further specify the type using"} tagName 
+ * @returns null or the element
+ */
 function $get(id, tagName=null){
     if(id != null && tagName != null && document.getElementById(id) !== null){
         if(document.getElementById(id).tagName === tagName.toUpperCase()){
@@ -38,47 +44,7 @@ function $createElement(tagName, textContent=null, attributes=[], childs=[]){
     return res;
 }
 
-// Event handlers
-async function handleFormSubmission(e) {
-    // Prevent redirection
-    e.preventDefault(); 
-     
-    let form = e.target;
-    let data = new FormData(form);
-
-    if (!form.name.value.isEmpty() && !form.email.value.isEmpty() && !form.message.value.isEmpty()) {
-        fetch(form.action, {
-            method: form.method,
-            body: data,
-            headers: {
-                'Accept': 'application/json'
-            }
-        }).then(response => {
-            alert("Thanks for your submission!");
-            form.reset()
-        }).catch(error => {
-            alert("Oops! There was a problem submitting your form");
-        });
-    } else {
-        alert("Invalid input!");
-    }
-
-    return false;
-}
-
-function scrollHandler(){
-    let nav = document.getElementsByTagName("NAV")[0];
-    let pos = nav.offsetTop;
-
-    if (document.documentElement.scrollTop < pos) {
-        nav.classList.remove("scrolled");
-    }else{
-        nav.classList.add("scrolled");
-    }
-
-}
-
-// General Functions
+// **General Functions
 function createArticleElement(title, imgName, hashTag, description, liveHref, sourceHref){
     let h1El = $createElement('h1', title);
     let headerEl = $createElement('header', null, [], [h1El]);
@@ -107,12 +73,15 @@ function createArticleElement(title, imgName, hashTag, description, liveHref, so
     return articleEl;
 }
 
-function loadProjects(){
+// if the limit is -1(no limit) then load everything
+function loadProjects(containerElement, limit=-1){
     fetch('js/data.json')
     .then(res => res.json())
     .then(res => {
         res.forEach(e => {
-            $get('project-container', 'section').appendChild(createArticleElement(e.title, e.imgName, e.hashTag, e.description, e.liveHref, e.sourceHref));
+            if(limit == 0) return;
+            containerElement.appendChild(createArticleElement(e.title, e.imgName, e.hashTag, e.description, e.liveHref, e.sourceHref));
+            if(limit != null) limit--;
         });
     })
     .catch(e => {
@@ -125,25 +94,78 @@ function getYear(){
     return new Date().getFullYear();
 }
 
+// **Event handlers
+function scrollHandler(){
+    let nav = document.getElementsByTagName("NAV")[0];
+    let pos = nav.offsetTop;
+
+    if (document.documentElement.scrollTop < pos) {
+        nav.classList.remove("scrolled");
+    }else{
+        nav.classList.add("scrolled");
+    }
+
+}
+
+async function handleFormSubmission(e) {
+    // Prevent redirection
+    e.preventDefault(); 
+     
+    let form = e.target;
+    let data = new FormData(form);
+
+    if (!form.name.value.isEmpty() && !form.email.value.isEmpty() && !form.message.value.isEmpty()) {
+        fetch(form.action, {
+            method: form.method,
+            body: data,
+            headers: {
+                'Accept': 'application/json'
+            }
+        }).then(response => {
+            alert("Thanks for your submission!");
+            form.reset()
+        }).catch(error => {
+            alert("Oops! There was a problem submitting your form");
+        });
+    } else {
+        alert("Invalid input!");
+    }
+
+    return false;
+}
+
+function handleScrollToElement(e){
+    e.preventDefault();
+
+    let clickedElement = e.target;
+    let targetElement = clickedElement.getAttribute("href");
+
+    // remove the first char from the id (#element -> element)
+    $get(targetElement.substring(1)).scrollIntoView({behavior: "smooth", block: "center", inline: "nearest"});
+}
 
 function app() {
-
-    // window.onscroll = scrollHandler;
-    // Project loading
-    if($get('project-container', 'section') !== null){
-        loadProjects();
-    }
-
-    // Form submission
-    if ($get('sendmessage') !== null) {
-        $get('sendmessage').onsubmit = handleFormSubmission;
-    }
+    // load projects
+    if($get('project-container', 'section') != null)
+        loadProjects($get('project-container', 'section'));
+    
+    // load sample projects
+    if($get('project-container-sample', 'section') != null)
+        loadProjects($get('project-container-sample', 'section'), 2);
 
     // Insert copyright year
     $get('copyright-date').textContent = getYear();
-    
 
-    console.log(getYear());
+
+    // **Event listener
+
+    // Form submission
+    // Validation is required as not all pages have sendmessage form
+    if ($get('sendmessage') != null) $get('sendmessage').onsubmit = handleFormSubmission;
+    
+    // Scroll to element
+    if ($get('inlineLink') != null) $get('inlineLink', 'a').onclick = handleScrollToElement;    
+    
 }
 
 app();
