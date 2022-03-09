@@ -128,7 +128,7 @@ function getYear(){
 
 function app() {
 
-    window.onscroll = scrollHandler;
+    // window.onscroll = scrollHandler;
     // Project loading
     if($get('project-container', 'section') !== null){
         loadProjects();
