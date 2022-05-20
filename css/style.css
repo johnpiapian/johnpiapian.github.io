@@ -598,7 +598,7 @@ article.project-item footer .links a:hover {
 /* Top level footer */
 body>footer {
     color: var(--color-6);
-    padding: 10px;
+    padding: 20px;
     text-align: center;
     background-color: #f7f7f7;
 }
