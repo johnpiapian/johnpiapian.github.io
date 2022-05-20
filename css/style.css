@@ -227,10 +227,12 @@ nav ul {
 nav ul li {
     margin: 0 5px;
     padding: 12px 10px;
+    padding: 20px 10px;
 }
 
 nav ul li a {
     color: whitesmoke;
+    letter-spacing: 2px;
     display: block;
     font-weight: bold;
     border-top: 2px solid transparent;
