@@ -154,7 +154,7 @@ function app() {
     
     // Load sample projects
     if($get('project-container-sample', 'section') != null)
-        loadProjects($get('project-container-sample', 'section'), 2);
+        loadProjects($get('project-container-sample', 'section'), 4);
 
     // Insert copyright year
     $get('copyright-date').textContent = getYear();
