@@ -168,4 +168,4 @@ function app() {
     if ($get('menu-links') != null) $get('menu-links').onclick = handleScrollToElement;    
 }
 
-app();
+app(); // start the app
