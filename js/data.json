@@ -25,7 +25,7 @@
         "sourceHref": ""        
     },
     {
-        "title": "Chat",
+        "title": "egoChat",
         "imgName": "chat.png",
         "hashTag": "#HTML #CSS #Javascript #Node.js #Socket.io",
         "description": "A web app (egoChat) that lets you chat with friends in real time.",
@@ -33,7 +33,7 @@
         "sourceHref": ""        
     },
     {
-        "title": "Chat IOS",
+        "title": "egoChat iOS",
         "imgName": "egochat_ios.jpg",
         "hashTag": "#IOS #Swift #Socket.io",
         "description": "An iOS app for egoChat that allows for fast and direct messaging with friends.",
