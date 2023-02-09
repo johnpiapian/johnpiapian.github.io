@@ -12,7 +12,7 @@
         "title": "Bookstore",
         "imgName": "Bookstore.png",
         "hashTag": "#HTML #CSS #Javascript #ASP.NET #Node.js",
-        "description": "The project is intended to be a website that displays a list of books that are extracted from users.",
+        "description": "The goal of this project is to create a website that showcases a collection of books recommended by users.",
         "liveHref": "",
         "sourceHref": "https://github.com/johnpiapian/Bookstore"        
     },
