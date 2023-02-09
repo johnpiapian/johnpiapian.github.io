@@ -1,4 +1,21 @@
 [
+    
+    {
+        "title": "NFT Web Applicaiton Project",
+        "imgName": "nft_project.png",
+        "hashTag": "#Java #JavaScript #HTML #CSS #Bootstrap",
+        "description": "This unique project simulates a vulnerable NFT marketplace web app with deliberately introduced security weaknesses to gain practical understanding by identifying and fixing them.",
+        "liveHref": "",
+        "sourceHref": "https://github.com/johnpiapian/NFT_web_application_project"        
+    },
+    {
+        "title": "Bookstore",
+        "imgName": "Bookstore.png",
+        "hashTag": "#HTML #CSS #Javascript #ASP.NET #Node.js",
+        "description": "The project is intended to be a website that displays a list of books that are extracted from users.",
+        "liveHref": "",
+        "sourceHref": "https://github.com/johnpiapian/Bookstore"        
+    },
     {
         "title": "AppZomi",
         "imgName": "appzomi.png",
@@ -12,32 +29,8 @@
         "imgName": "chat.png",
         "hashTag": "#HTML #CSS #Javascript #Node.js #Socket.io",
         "description": "A live chatting website that lets you send and receive texts from your friends instantaneously.",
-        "liveHref": "http://chat.appzomi.ml/",
+        "liveHref": "http://chat.appzomi.dev/",
         "sourceHref": ""        
-    },
-    {
-        "title": "Bookstore",
-        "imgName": "Bookstore.png",
-        "hashTag": "#HTML #CSS #Javascript #ASP.NET #Node.js",
-        "description": "The project is intended to be a website that displays a list of books that are extracted from users.",
-        "liveHref": "",
-        "sourceHref": "https://github.com/johnpiapian/Bookstore"        
-    },
-    {
-        "title": "Java Gradebook",
-        "imgName": "java_gradebook.png",
-        "hashTag": "#Java",
-        "description": "Student gradebook written in Java.",
-        "liveHref": "imgs/java_gradebook.gif",
-        "sourceHref": "https://github.com/johnpiapian/Gradebook_Java"        
-    },
-    {
-        "title": "5678dancestudio.net",
-        "imgName": "5678dancestudio.net.jpg",
-        "hashTag": "#HTML #CSS #Javascript",
-        "description": "A Front-end development project of a rebuild of 5678dancestudio.net website from scratch for education purposes. No copyright infringement intended.",
-        "liveHref": "projects/5678dancestudio.net",
-        "sourceHref": "https://github.com/johnpiapian/5678dancestudio.net"        
     },
     {
         "title": "Chat IOS",
@@ -48,20 +41,36 @@
         "sourceHref": "https://github.com/johnpiapian/egoChat_iOS"        
     },
     {
-        "title": "Todo list",
-        "imgName": "todo.png",
+        "title": "Todo List",
+        "imgName": "web_todo.png",
         "hashTag": "#HTML #CSS #Javascript",
         "description": "A todo list that lets you add new todos.",
-        "liveHref": "http://www.appzomi.ml/todo-list/",
-        "sourceHref": "https://github.com/johnpiapian/Todo-list"        
+        "liveHref": "https://dev.appzomi.dev/webapps/todo-list/",
+        "sourceHref": ""        
     },
     {
         "title": "Calculator",
         "imgName": "calculator.png",
         "hashTag": "#HTML #CSS #Javascript",
         "description": "A web-based calculator inspired by Apple's calculator design.",
-        "liveHref": "http://www.appzomi.ml/calculator/",
-        "sourceHref": "https://github.com/johnpiapian/Simple-Calculator/tree/master/calculator"        
+        "liveHref": "https://dev.appzomi.dev/webapps/calculator/",
+        "sourceHref": ""
+    },
+    {
+        "title": "5678dancestudio.net",
+        "imgName": "5678dancestudio.net.jpg",
+        "hashTag": "#HTML #CSS #Javascript",
+        "description": "A front-end development project from a class, it is a rebuild of 5678dancestudio.net website from scratch for education purposes. No copyright infringement intended.",
+        "liveHref": "projects/5678dancestudio.net",
+        "sourceHref": "https://github.com/johnpiapian/5678dancestudio.net"        
+    },
+    {
+        "title": "Java Gradebook",
+        "imgName": "java_gradebook.png",
+        "hashTag": "#Java",
+        "description": "Student gradebook written in Java.",
+        "liveHref": "imgs/java_gradebook.gif",
+        "sourceHref": "https://github.com/johnpiapian/Gradebook_Java"        
     },
     {
         "title": "Java Todo",
