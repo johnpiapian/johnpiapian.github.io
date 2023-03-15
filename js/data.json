@@ -11,7 +11,7 @@
     {
         "title": "Bookstore",
         "imgName": "Bookstore.png",
-        "hashTag": "#.NETCore #React #MongoDB",
+        "hashTag": "#.NET #React #MongoDB",
         "description": "The goal of this project is to create a website that showcases a collection of books recommended by users.",
         "liveHref": "",
         "sourceHref": "https://github.com/johnpiapian/Bookstore"        
