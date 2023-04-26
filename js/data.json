@@ -57,14 +57,6 @@
         "sourceHref": ""        
     },
     {
-        "title": "Calculator",
-        "imgName": "calculator.png",
-        "hashTag": "#HTML #CSS #JavaScript",
-        "description": "A web-based calculator inspired by Apple's calculator design.",
-        "liveHref": "https://appzomi.dev/dev/webapps/calculator/",
-        "sourceHref": ""
-    },
-    {
         "title": "5678dancestudio.net",
         "imgName": "5678dancestudio.net.jpg",
         "hashTag": "#HTML #CSS #JavaScript",
@@ -79,22 +71,6 @@
         "description": "Student gradebook written in Java.",
         "liveHref": "imgs/java_gradebook.gif",
         "sourceHref": "https://github.com/johnpiapian/Gradebook_Java"        
-    },
-    {
-        "title": "Java Todo",
-        "imgName": "java_todo.png",
-        "hashTag": "#Java",
-        "description": "A simple todo list app in CLI built using Java.",
-        "liveHref": "imgs/java_todo.gif",
-        "sourceHref": "https://github.com/johnpiapian/Todo_JAVA"        
-    },
-    {
-        "title": "Java Hangman Game",
-        "imgName": "java_hangman.png",
-        "hashTag": "#Java",
-        "description": "A console based hangman game in Java.",
-        "liveHref": "imgs/java_hangman.gif",
-        "sourceHref": "https://github.com/johnpiapian/Hangman_Java"        
     },
     {
         "title": "Java BMI Calculator",
