@@ -174,7 +174,7 @@ section.me div.image {
     overflow: hidden;
     /* perspective: 1; */
     border: 4px solid #94949480;
-    border-color: #838e9480;
+    border-color: #a6d2f4d7;
     transition: all 150ms ease-out;
     border-radius: 30% 70% 70% 30%/30% 30% 70% 70%;
     -webkit-animation: morphing 10s infinite;
@@ -182,14 +182,14 @@ section.me div.image {
 }
 
 section.me div.image:hover {
-    border-color: #a6d2f4d7;
+    border-color: #dfbc79c3;
     -webkit-animation-play-state: paused;
             animation-play-state: paused;
 }
 
 section.me div.image img {
     max-width: 100%;
-    transform: scale(1.3) translate(5px, 10px);
+    transform: scale(1.2) translate(5px, 10px);
     transition: all 150ms ease-out;
 }
 
