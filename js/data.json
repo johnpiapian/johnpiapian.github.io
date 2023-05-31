@@ -1,21 +1,4 @@
 [
-    
-    {
-        "title": "NFT Web Applicaiton Project",
-        "imgName": "nft_project.png",
-        "hashTag": "#Java #SQlite #JavaScript #Bootstrap",
-        "description": "This unique project simulates a vulnerable NFT marketplace web app with deliberately introduced security weaknesses to gain practical understanding by identifying and fixing them.",
-        "liveHref": "",
-        "sourceHref": "https://github.com/johnpiapian/NFT_web_application_project"        
-    },
-    {
-        "title": "Bookstore",
-        "imgName": "Bookstore.png",
-        "hashTag": "#.NET #React #MongoDB",
-        "description": "The goal of this project is to create a website that showcases a collection of books recommended by users.",
-        "liveHref": "",
-        "sourceHref": "https://github.com/johnpiapian/Bookstore"        
-    },
     {
         "title": "AppZomi",
         "imgName": "appzomi.png",
@@ -31,6 +14,22 @@
         "description": "A web app (egoChat) that lets you chat with friends in real time.",
         "liveHref": "http://chat.appzomi.dev/",
         "sourceHref": ""        
+    },
+    {
+        "title": "NFT Web Applicaiton Project",
+        "imgName": "nft_project.png",
+        "hashTag": "#Java #SQlite #JavaScript #Bootstrap",
+        "description": "This unique project simulates a vulnerable NFT marketplace web app with deliberately introduced security weaknesses to gain practical understanding by identifying and fixing them.",
+        "liveHref": "",
+        "sourceHref": "https://github.com/johnpiapian/NFT_web_application_project"        
+    },
+    {
+        "title": "Bookstore",
+        "imgName": "Bookstore.png",
+        "hashTag": "#.NET #React #MongoDB",
+        "description": "The goal of this project is to create a website that showcases a collection of books recommended by users.",
+        "liveHref": "",
+        "sourceHref": "https://github.com/johnpiapian/Bookstore"        
     },
     {
         "title": "Todo React Express",
