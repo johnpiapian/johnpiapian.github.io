@@ -94,17 +94,17 @@ function getYear() {
 }
 
 // **Event handlers
-function scrollHandler() {
-    let nav = document.getElementsByTagName("NAV")[0];
-    let pos = nav.offsetTop;
+// function scrollHandler() {
+//     let nav = document.getElementsByTagName("NAV")[0];
+//     let pos = nav.offsetTop;
 
-    if (document.documentElement.scrollTop < pos) {
-        nav.classList.remove("scrolled");
-    } else {
-        nav.classList.add("scrolled");
-    }
+//     if (document.documentElement.scrollTop < pos) {
+//         nav.classList.remove("scrolled");
+//     } else {
+//         nav.classList.add("scrolled");
+//     }
 
-}
+// }
 
 async function handleFormSubmission(e) {
     // Prevent redirection
@@ -134,7 +134,9 @@ async function handleFormSubmission(e) {
 }
 
 function handleScrollToElement(e) {
-    if (e.target.id != "linkToElement") return;
+    // Make sure it is linkToelemnt so that it doesn't conflict with other links
+    if (!e.target.dataset.linkType || e.target.dataset.linkType != "linkToElement") return;
+
 
     // prevent page reload
     e.preventDefault();
