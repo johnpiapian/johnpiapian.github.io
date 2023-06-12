@@ -94,18 +94,6 @@ function getYear() {
 }
 
 // **Event handlers
-function scrollHandler() {
-    let nav = document.getElementsByTagName("NAV")[0];
-    let pos = nav.offsetTop;
-
-    if (document.documentElement.scrollTop < pos) {
-        nav.classList.remove("scrolled");
-    } else {
-        nav.classList.add("scrolled");
-    }
-
-}
-
 async function handleFormSubmission(e) {
     // Prevent redirection
     e.preventDefault();
@@ -134,44 +122,67 @@ async function handleFormSubmission(e) {
 }
 
 function handleScrollToElement(e) {
-    if (e.target.id != "linkToElement") return;
+    // make sure it is linkToElement so that it doesn't conflict with other links
+    if (!e.target.classList.contains("linkToElement")) return;
 
     // prevent page reload
     e.preventDefault();
 
-    let clickedElement = e.target;
-    let targetElement = clickedElement.getAttribute("href");
+    let targetElementId = e.target.getAttribute("href");
+    let targetElement = $get(targetElementId.substring(1));
 
-    // remove the first char from the id (#element -> element)
-    switch (targetElement.substring(1)) {
-        // Special case for project-container-sample
-        case "project-container-sample":
-            $get(targetElement.substring(1)).scrollIntoView({ behavior: "smooth", block: "start", inline: "nearest" });
-            break;
-        default:
-            $get(targetElement.substring(1)).scrollIntoView({ behavior: "smooth", block: "center", inline: "nearest" });
-            break;
-    }
+    // Scroll to the element using scrollTo
+    window.scrollTo({ top: targetElement.offsetTop - 100, behavior: "smooth"});
 }
 
-function app() {
-    // Load projects
-    if ($get('project-container', 'section') != null)
-        loadProjects($get('project-container', 'section'));
+function scrollHandler(e) {
+    let sections = document.querySelectorAll("section.item");
+    let scrollY = window.scrollY;
 
-    // Load sample projects
-    if ($get('project-container-sample', 'section') != null)
+    // remove current class from all linkToElement links
+    document.querySelectorAll(`nav ul li a.linkToElement`).forEach(link => {
+        link.classList.remove("current");
+    });
+
+    sections.forEach(section => {
+        let sectionTop = section.offsetTop - 200;
+        let sectionBottom = sectionTop + section.offsetHeight;
+
+        if (scrollY >= sectionTop && scrollY <= sectionBottom) {
+            let link = document.querySelector(`nav ul li a[href="#${section.getAttribute("id")}"]`);
+            link.classList.add("current");
+        }
+    });
+}
+
+function init() {
+    // Load projects
+    if ($get('project-container', 'section') != null) {
+        loadProjects($get('project-container', 'section'));
+    }
+
+    // Load sample projects (home page)
+    if ($get('project-container-sample', 'section') != null) {
         loadProjects($get('project-container-sample', 'section'), 4);
+    }
 
     // Insert copyright year
     $get('copyright-date').textContent = getYear();
+}
 
-    // **Event listeners
+function eventListeners() {
     // Form submission. Validation is required as not all pages have sendmessage form
     if ($get('sendmessage') != null) $get('sendmessage').onsubmit = handleFormSubmission;
 
     // Scroll to element
     if ($get('menu-links') != null) $get('menu-links').onclick = handleScrollToElement;
-}
 
-app(); // start the app
+    // Scroll event
+    window.onscroll = scrollHandler;
+}   
+
+// **Main
+(function app() {
+    init(); // initialize the app
+    eventListeners(); // add event listeners
+})();
