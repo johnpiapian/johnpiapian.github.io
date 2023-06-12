@@ -94,18 +94,6 @@ function getYear() {
 }
 
 // **Event handlers
-// function scrollHandler() {
-//     let nav = document.getElementsByTagName("NAV")[0];
-//     let pos = nav.offsetTop;
-
-//     if (document.documentElement.scrollTop < pos) {
-//         nav.classList.remove("scrolled");
-//     } else {
-//         nav.classList.add("scrolled");
-//     }
-
-// }
-
 async function handleFormSubmission(e) {
     // Prevent redirection
     e.preventDefault();
@@ -142,38 +130,63 @@ function handleScrollToElement(e) {
     e.preventDefault();
 
     let clickedElement = e.target;
-    let targetElement = clickedElement.getAttribute("href");
+    let targetElementId = clickedElement.getAttribute("href");
+    let targetElement = $get(targetElementId.substring(1));
+    let scrollTo = targetElement.dataset.scrollTo ?? "center";
 
-    // remove the first char from the id (#element -> element)
-    switch (targetElement.substring(1)) {
-        // Special case for project-container-sample
-        case "project-container-sample":
-            $get(targetElement.substring(1)).scrollIntoView({ behavior: "smooth", block: "start", inline: "nearest" });
-            break;
-        default:
-            $get(targetElement.substring(1)).scrollIntoView({ behavior: "smooth", block: "center", inline: "nearest" });
-            break;
-    }
+    // Scroll to the element
+    targetElement.scrollIntoView({ behavior: "smooth", block: scrollTo, inline: "nearest" });
 }
 
-function app() {
-    // Load projects
-    if ($get('project-container', 'section') != null)
-        loadProjects($get('project-container', 'section'));
+function scrollHandler(e) {
+    let sections = document.querySelectorAll("section.item");
+    let scrollY = window.scrollY;
 
-    // Load sample projects
-    if ($get('project-container-sample', 'section') != null)
+    sections.forEach(section => {
+        let sectionTop = section.offsetTop - 200;
+        let sectionBottom = sectionTop + section.offsetHeight;
+
+        if (scrollY >= sectionTop && scrollY <= sectionBottom) {
+            let link = document.querySelector(`nav ul li a[href="#${section.getAttribute("id")}"]`);
+
+            // remove current class from all links with class linkToElement
+            document.querySelectorAll(`nav ul li a[data-link-type="linkToElement"]`).forEach(link => {
+                link.classList.remove("current");
+            });
+
+            link.classList.add("current");
+        }
+    });
+}
+
+function init() {
+    // Load projects
+    if ($get('project-container', 'section') != null) {
+        loadProjects($get('project-container', 'section'));
+    }
+
+    // Load sample projects (home page)
+    if ($get('project-container-sample', 'section') != null) {
         loadProjects($get('project-container-sample', 'section'), 4);
+    }
 
     // Insert copyright year
     $get('copyright-date').textContent = getYear();
+}
 
-    // **Event listeners
+function eventListeners() {
     // Form submission. Validation is required as not all pages have sendmessage form
     if ($get('sendmessage') != null) $get('sendmessage').onsubmit = handleFormSubmission;
 
     // Scroll to element
     if ($get('menu-links') != null) $get('menu-links').onclick = handleScrollToElement;
-}
 
-app(); // start the app
+    // Scroll event
+    window.onscroll = scrollHandler;
+}   
+
+// **Main
+(function app() {
+    init(); // initialize the app
+    eventListeners(); // add event listeners
+})();
