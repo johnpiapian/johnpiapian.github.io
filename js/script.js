@@ -122,9 +122,8 @@ async function handleFormSubmission(e) {
 }
 
 function handleScrollToElement(e) {
-    // Make sure it is linkToelemnt so that it doesn't conflict with other links
-    if (!e.target.dataset.linkType || e.target.dataset.linkType != "linkToElement") return;
-
+    // Make sure it is linkToElement so that it doesn't conflict with other links
+    if (!e.target.classList.contains("linkToElement")) return;
 
     // prevent page reload
     e.preventDefault();
@@ -149,8 +148,8 @@ function scrollHandler(e) {
         if (scrollY >= sectionTop && scrollY <= sectionBottom) {
             let link = document.querySelector(`nav ul li a[href="#${section.getAttribute("id")}"]`);
 
-            // remove current class from all links with class linkToElement
-            document.querySelectorAll(`nav ul li a[data-link-type="linkToElement"]`).forEach(link => {
+            // remove current class from all  linkToElement links
+            document.querySelectorAll(`nav ul li a.linkToElement`).forEach(link => {
                 link.classList.remove("current");
             });
 
