@@ -234,7 +234,7 @@ nav ul li a {
     color: whitesmoke;
     letter-spacing: 2px;
     display: block;
-    font-weight: bold;
+    /* font-weight: bold; */
     border-top: 2px solid transparent;
     transition: all 200ms ease-out;
 }
@@ -243,16 +243,16 @@ nav ul li a:hover {
     color: wheat;
 }
 
-nav ul li a.linkToElement {
-    font-weight: normal;
-}
-
 nav ul li a.active {
     border-top: 2px solid wheat;
 }
 
-nav ul li a.linkToElement.current {
+nav ul li a.current {
     color: wheat;
+}
+
+nav ul li a.linkToElement {
+    font-weight: normal;
 }
 
 nav ul li a:not(.linkToElement):hover {

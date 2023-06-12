@@ -122,24 +122,27 @@ async function handleFormSubmission(e) {
 }
 
 function handleScrollToElement(e) {
-    // Make sure it is linkToElement so that it doesn't conflict with other links
+    // make sure it is linkToElement so that it doesn't conflict with other links
     if (!e.target.classList.contains("linkToElement")) return;
 
     // prevent page reload
     e.preventDefault();
 
-    let clickedElement = e.target;
-    let targetElementId = clickedElement.getAttribute("href");
+    let targetElementId = e.target.getAttribute("href");
     let targetElement = $get(targetElementId.substring(1));
-    let scrollTo = targetElement.dataset.scrollTo ?? "center";
 
-    // Scroll to the element
-    targetElement.scrollIntoView({ behavior: "smooth", block: scrollTo, inline: "nearest" });
+    // Scroll to the element using scrollTo
+    window.scrollTo({ top: targetElement.offsetTop - 100, behavior: "smooth"});
 }
 
 function scrollHandler(e) {
     let sections = document.querySelectorAll("section.item");
     let scrollY = window.scrollY;
+
+    // remove current class from all linkToElement links
+    document.querySelectorAll(`nav ul li a.linkToElement`).forEach(link => {
+        link.classList.remove("current");
+    });
 
     sections.forEach(section => {
         let sectionTop = section.offsetTop - 200;
@@ -147,12 +150,6 @@ function scrollHandler(e) {
 
         if (scrollY >= sectionTop && scrollY <= sectionBottom) {
             let link = document.querySelector(`nav ul li a[href="#${section.getAttribute("id")}"]`);
-
-            // remove current class from all  linkToElement links
-            document.querySelectorAll(`nav ul li a.linkToElement`).forEach(link => {
-                link.classList.remove("current");
-            });
-
             link.classList.add("current");
         }
     });
