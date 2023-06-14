@@ -244,6 +244,7 @@ nav ul li a:hover {
 }
 
 nav ul li a.active {
+    color: wheat;
     border-top: 2px solid wheat;
 }
 
