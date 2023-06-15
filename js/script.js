@@ -136,15 +136,13 @@ function handleScrollToElement(e) {
 }
 
 function scrollHandler(e) {
-    let sections = document.querySelectorAll("section.item");
-    let scrollY = window.scrollY;
-
     // remove current class from all linkToElement links
     document.querySelectorAll(`nav ul li a.linkToElement`).forEach(link => {
         link.classList.remove("current");
     });
-
-    sections.forEach(section => {
+    
+    document.querySelectorAll("section.item").forEach(section => {
+        let scrollY = window.scrollY;
         let sectionTop = section.offsetTop - 200;
         let sectionBottom = sectionTop + section.offsetHeight;
 
