@@ -624,6 +624,10 @@ body>footer {
         align-items: center;
     }
 
+    section.me .name {
+        text-align: center;
+    }
+
     section.content .skillset {
         flex-direction: column;
     }
