@@ -16,7 +16,7 @@
         "sourceHref": ""        
     },
     {
-        "title": "NFT Web Applicaiton Project",
+        "title": "NFT Web Application Project",
         "imgName": "nft_project.png",
         "hashTag": "#Java #SQlite #JavaScript #Bootstrap",
         "description": "This unique project simulates a vulnerable NFT marketplace web app with deliberately introduced security weaknesses to gain practical understanding by identifying and fixing them.",
