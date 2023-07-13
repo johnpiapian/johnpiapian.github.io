@@ -24,6 +24,14 @@
         "sourceHref": "https://github.com/johnpiapian/NFT_web_application_project"        
     },
     {
+        "title": "Youtube Title Extractor",
+        "imgName": "youtube-title-extractor.jpg",
+        "hashTag": "#Python",
+        "description": "Extract video titles from a youtube playlist and export the data.",
+        "liveHref": "https://appzomi.dev/dev/apps/youtube-title-extrator/",
+        "sourceHref": "https://github.com/johnpiapian/youtube-title-extractor"
+    },
+    {
         "title": "Bookstore",
         "imgName": "Bookstore.png",
         "hashTag": "#.NET #React #MongoDB",
