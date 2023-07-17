@@ -42,7 +42,7 @@
     {
         "title": "Todo React Express",
         "imgName": "todo-react-express.jpg",
-        "hashTag": "#Next.js #Express #SQlite",
+        "hashTag": "#Next.js #Express #SQlite #Docker",
         "description": "A revamp of a frontend todo app I created a while ago into a fully functional web app by implementing a login system and database integration.",
         "liveHref": "imgs/todo-react-express.gif",
         "sourceHref": "https://github.com/johnpiapian/todo-react-express"        
