@@ -528,25 +528,25 @@ section.content>header.project-title h1 {
 }
 
 section.project-container {
-    margin: 0 auto;
-    width: 100%;
-    flex-direction: row;
     display: flex;
+    flex-direction: row;
     flex-wrap: wrap;
-    align-items: flex-start;
+    align-items: stretch;
     justify-content: space-around;
+    width: 100%;
+    margin: 0 auto;
 }
 
 article.project-item {
-    margin: 50px 20px;
+    margin: 40px 30px;
     width: 100%;
     max-width: 400px;
-    /* border: 4px solid #888; */
-    /* box-shadow: 0px 0px 2px 0px black; */
     border: 2px solid #ddd;
     box-shadow: 0px 0px 20px -10px #5a5a5a;
     border-radius: 5px;
     overflow: hidden;
+    display: flex;
+    flex-direction: column;
 }
 
 article.project-item header {
@@ -561,12 +561,13 @@ article.project-item header h1 {
 }
 
 article.project-item section.image-container {
-    border-bottom: 1px solid #ccc;
+    flex-grow: 1;
 }
 
 article.project-item section.image-container img {
-    display: block;
-    max-width: 100%;
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
 }
 
 article.project-item footer>p {
@@ -575,11 +576,12 @@ article.project-item footer>p {
 
 article.project-item footer p.hash-tag {
     font-size: .9em;
-    text-align: left;
+    text-align: center;
+    padding: 5px;
 }
 
 article.project-item footer p.description {
-    padding: 20px 10px;
+    padding: 10px 15px 15px 15px;
 }
 
 article.project-item footer .links {
