@@ -47,6 +47,13 @@ https://coolors.co/e63946-f1faee-a8dadc-457b9d-1d3557
     }
 }
 
+/* Fonts */
+@font-face {
+    font-family: 'Mackinac-Pro-Book';
+    src: url('../assets/fonts/P22Mackinac/P22MackinacPro-Medium_26.otf');
+    src: url('../assets/fonts/P22Mackinac/P22MackinacPro-Book_25.otf');
+}
+
 :root {
     --main-max-width: 1000px;
     --color-1: #E63946;
@@ -87,7 +94,7 @@ a {
 
 /* CSS start */
 body {
-    font-family: 'Lato', 'Open Sans', sans-serif;
+    font-family: 'Mackinac-Pro-Book', 'Lato', 'Open Sans', sans-serif;
     margin-top: 60vh;
 }
 
