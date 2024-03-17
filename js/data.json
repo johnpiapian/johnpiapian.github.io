@@ -11,7 +11,7 @@
         "title": "egoChat",
         "imgName": "chat.png",
         "hashTag": "#JavaScript #Node.js #Socket.io",
-        "description": "A web app (egoChat) that lets you chat with friends in real time.",
+        "description": "A live chat web app.",
         "liveHref": "http://chat.appzomi.dev/",
         "sourceHref": ""        
     },
@@ -19,14 +19,14 @@
         "title": "NFT Web Application Project",
         "imgName": "nft_project.png",
         "hashTag": "#Java #SQlite #JavaScript #Bootstrap",
-        "description": "This unique project simulates a vulnerable NFT marketplace web app with deliberately introduced security weaknesses to gain practical understanding by identifying and fixing them.",
+        "description": "This project simulates a vulnerable NFT marketplace web app with deliberately introduced security weaknesses to gain practical understanding by identifying and fixing them.",
         "liveHref": "",
         "sourceHref": "https://github.com/johnpiapian/NFT_web_application_project"        
     },
     {
         "title": "Youtube Title Extractor",
         "imgName": "youtube-title-extractor.jpg",
-        "hashTag": "#Python",
+        "hashTag": "#Python", 
         "description": "Extract video titles from a youtube playlist and export the data.",
         "liveHref": "https://appzomi.dev/dev/apps/youtube-title-extrator/",
         "sourceHref": "https://github.com/johnpiapian/youtube-title-extractor"
@@ -35,7 +35,7 @@
         "title": "Bookstore",
         "imgName": "Bookstore.png",
         "hashTag": "#.NET #React #MongoDB",
-        "description": "The goal of this project is to create a website that showcases a collection of books recommended by users.",
+        "description": "Save your favorite books.",
         "liveHref": "",
         "sourceHref": "https://github.com/johnpiapian/Bookstore"        
     },
@@ -43,15 +43,15 @@
         "title": "Todo React Express",
         "imgName": "todo-react-express.jpg",
         "hashTag": "#Next.js #Express #SQlite #Docker",
-        "description": "A revamp of a frontend todo app I created a while ago into a fully functional web app by implementing a login system and database integration.",
+        "description": "A todo web app with a fully functional login system and database integration.",
         "liveHref": "imgs/todo-react-express.gif",
-        "sourceHref": "https://github.com/johnpiapian/todo-react-express"        
+        "sourceHref": "https://github.com/johnpiapian/todo-react-express"
     },
     {
         "title": "egoChat iOS",
         "imgName": "egochat_ios.jpg",
         "hashTag": "#IOS #Swift #Socket.io",
-        "description": "An iOS app for egoChat that allows for fast and direct messaging with friends.",
+        "description": "An iOS app for egoChat.",
         "liveHref": "",
         "sourceHref": "https://github.com/johnpiapian/egoChat_iOS"        
     },
@@ -59,7 +59,7 @@
         "title": "Todo List",
         "imgName": "web_todo.png",
         "hashTag": "#HTML #CSS #JavaScript",
-        "description": "A todo list that lets you add new todos.",
+        "description": "A todo list that helps you keep track of tasks.",
         "liveHref": "https://appzomi.dev/dev/webapps/todo-list/",
         "sourceHref": ""        
     },
@@ -67,7 +67,7 @@
         "title": "5678dancestudio.net",
         "imgName": "5678dancestudio.net.jpg",
         "hashTag": "#HTML #CSS #JavaScript",
-        "description": "A front-end development project from a class, it is a rebuild of 5678dancestudio.net website from scratch for education purposes. No copyright infringement intended.",
+        "description": "A front-end development project from a class, it is a rebuild of 5678dancestudio.net (2020) website from scratch for education purposes.",
         "liveHref": "projects/5678dancestudio.net",
         "sourceHref": "https://github.com/johnpiapian/5678dancestudio.net"        
     },
