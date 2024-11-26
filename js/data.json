@@ -9,7 +9,7 @@
     },
     {
         "title": "egoChat",
-        "imgName": "chat.png",
+        "imgName": "chat.jpg",
         "hashTag": "#JavaScript #Node.js #Socket.io",
         "description": "A live chat web app.",
         "liveHref": "http://chat.appzomi.dev/",
@@ -48,14 +48,6 @@
         "sourceHref": "https://github.com/johnpiapian/todo-react-express"
     },
     {
-        "title": "egoChat iOS",
-        "imgName": "egochat_ios.jpg",
-        "hashTag": "#IOS #Swift #Socket.io",
-        "description": "An iOS app for egoChat.",
-        "liveHref": "",
-        "sourceHref": "https://github.com/johnpiapian/egoChat_iOS"        
-    },
-    {
         "title": "Todo List",
         "imgName": "web_todo.png",
         "hashTag": "#HTML #CSS #JavaScript",
@@ -64,27 +56,11 @@
         "sourceHref": ""        
     },
     {
-        "title": "5678dancestudio.net",
-        "imgName": "5678dancestudio.net.jpg",
-        "hashTag": "#HTML #CSS #JavaScript",
-        "description": "A front-end development project from a class, it is a rebuild of 5678dancestudio.net (2020) website from scratch for education purposes.",
-        "liveHref": "projects/5678dancestudio.net",
-        "sourceHref": "https://github.com/johnpiapian/5678dancestudio.net"        
-    },
-    {
-        "title": "Java Gradebook",
-        "imgName": "java_gradebook.png",
-        "hashTag": "#Java",
-        "description": "Student gradebook written in Java.",
-        "liveHref": "imgs/java_gradebook.gif",
-        "sourceHref": "https://github.com/johnpiapian/Gradebook_Java"        
-    },
-    {
-        "title": "Java BMI Calculator",
-        "imgName": "java_bmi.png",
-        "hashTag": "#Java",
-        "description": "A GUI app written in Java for calculating BMI.",
-        "liveHref": "imgs/java_bmi.gif",
-        "sourceHref": "https://github.com/johnpiapian/myBMI_JAVA"        
+        "title": "egoChat iOS",
+        "imgName": "egochat_ios.jpg",
+        "hashTag": "#IOS #Swift #Socket.io",
+        "description": "An iOS app for egoChat.",
+        "liveHref": "",
+        "sourceHref": "https://github.com/johnpiapian/egoChat_iOS"        
     }
 ]
