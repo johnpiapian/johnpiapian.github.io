@@ -80,7 +80,7 @@ a {
     text-decoration: none;
 }
 
-/* Resuable component */
+/* Resuable Component */
 .reset-button {
     -webkit-appearance: none;
     -moz-appearance: none;
@@ -92,7 +92,7 @@ a {
     color: var(--color-4b);
 }
 
-/* CSS start */
+/* Main Start */
 body {
     font-family: 'Mackinac-Pro-Book', 'Lato', 'Open Sans', sans-serif;
     margin-top: 60vh;
@@ -115,7 +115,7 @@ body>header {
     background-size: cover;
 }
 
-/* Header text & Image */
+/* Header Text & Image */
 section.me {
     color: #444;
     padding: 20px 50px;
@@ -205,7 +205,7 @@ section.me div.image img:hover {
             filter: brightness(103%);
 }
 
-/* Navigation bar */
+/* Navigation Bar */
 nav {
     top: 0;
     position: -webkit-sticky;
@@ -275,7 +275,7 @@ nav ul li a:not(.linkToElement):hover {
     animation-duration: 1s;
 } */
 
-/* Main content container (only one a page) */
+/* Main Content Container */
 main {
     display: flex;
     justify-content: center;
@@ -307,21 +307,17 @@ main>section.content>.item>h1 {
     font-size: 2em;
 }
 
-/*  ***MAIN PAGE***  */
-
-/* About me/Introduction */
-section.content .about {
+/* Self Introduction */
+section.content .introduction {
     text-align: center;
     border-radius: 10px;
     margin-top: 50px;
     margin-bottom: 15px;
-    /* border: 1px solid #dadada; */
-    /* box-shadow: 0px 2px 5px -5px black; */
     border-left: 1px solid #dadada;
     border-right: 1px solid #dadada;
 }
 
-.about p {
+.introduction article {
     padding: 10px;
     line-height: 2;
     -webkit-animation: fadeIn;
@@ -332,7 +328,26 @@ section.content .about {
     animation-timing-function: ease-in;
 }
 
-/* Skills showcase section */
+.introduction .introduction-text {
+    padding: 20px 0;
+    margin-bottom: 20px;
+}
+
+.introduction .introduction-text .seperator::after {
+    content: "\2022";
+}
+
+.introduction .quote {
+    font-style: italic;
+    color: #555;
+}
+
+.introduction .quote::before,
+.introduction .quote::after {
+    content: '"';
+}
+
+/* Skillset Section */
 section.content .skillset {
     display: flex;
     color: #444;
@@ -520,9 +535,7 @@ section.content .connect {
     border-radius: 5px;
 }
 
-/*  ***PROJECTS PAGE***  */
-
-/* projects list */
+/* Projects List */
 section.content>header.project-title {
     background-color: #d4d4d45d;
     border-radius: 10px;
@@ -613,7 +626,7 @@ article.project-item footer .links a:hover {
     color: #777;
 }
 
-/* Top level footer */
+/* Top Level Footer */
 body>footer {
     color: var(--color-6);
     padding: 20px;
@@ -635,6 +648,14 @@ body>footer {
 
     section.me .name {
         text-align: center;
+    }
+
+    section.introduction .introduction-text .item {
+        display: block;
+    }
+
+    section.introduction .introduction-text .seperator::after {
+        content: "";
     }
 
     section.content .skillset {
