@@ -472,70 +472,6 @@ section.content .connect {
     color: #1da1f2;
 }
 
-/* Contact Form */
-.connect .sendmessage {
-    display: flex;
-    flex-direction: row;
-    justify-content: center;
-    padding: 20px;
-    width: 100%;
-}
-
-.sendmessage form {
-    width: 100%;
-    max-width: 500px;
-}
-
-.sendmessage form>div {
-    margin: 10px 0;
-}
-
-.sendmessage form>div>* {
-    display: block;
-    width: 100%;
-}
-
-.sendmessage form>div>label {
-    color: #777;
-    padding: 10px 5px;
-    font-weight: bold;
-}
-
-.sendmessage form>div>input,
-.sendmessage form>div>textarea {
-    font-family: inherit;
-    font-size: 1em;
-    padding: 10px 5px;
-    border: 1px solid #ccc;
-    border-radius: 2px;
-}
-
-.sendmessage form>div>textarea {
-    height: 200px;
-    max-height: 200px;
-    min-height: 200px;
-    max-width: 100%;
-    min-width: 100%;
-}
-
-.sendmessage form .submit {
-    cursor: pointer;
-    color: var(--color-2);
-    background-color: var(--color-4);
-    transition: all 150ms ease-in;
-}
-
-.sendmessage form .submit:hover {
-    color: wheat;
-    /* background-color: var(--color-4a); */
-}
-
-.sendmessage form>div>input,
-.sendmessage form>div>textarea,
-.sendmessage form .submit {
-    border-radius: 5px;
-}
-
 /* Projects List */
 section.content>header.project-title {
     background-color: #d4d4d45d;
@@ -676,15 +612,7 @@ body>footer {
         border-bottom: 1px solid lightgray;
     }
 
-    section.content .connect {
-        padding: 0;
-    }
-
-    section.content .connect>* {
-        padding: 20px 2px;
-    }
-
-    section.content>header.project-title {
+    section.content > header.project-title {
         margin: 0;
     }
 
