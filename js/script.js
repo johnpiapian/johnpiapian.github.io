@@ -89,20 +89,33 @@ function loadProjects(containerElement, limit = -1) {
 // **Event handlers
 function handleScrollToElement(e) {
   // make sure it is linkToElement so that it doesn't conflict with other links
-  if (!e.target.classList.contains("linkToElement")) return;
+  if (!e.target.classList.contains('linkToElement')) return;
 
   // prevent page reload
   e.preventDefault();
 
-  let targetElementId = e.target.getAttribute("href");
-  let targetElement = $get(targetElementId.substring(1));
+  const targetElementId = e.target.getAttribute('href');
+  const targetElement = document.getElementById(targetElementId.substring(1));
 
-  // Scroll to the element using scrollTo
-  window.scrollTo({ top: targetElement.offsetTop - 100, behavior: "smooth" });
+  if (!targetElement) return;
+
+  const elementTop = targetElement.offsetTop;
+  const elementHeight = targetElement.offsetHeight;
+  const windowHeight = window.innerHeight;
+  const navbarOffset = 80;
+
+  const scrollPosition = (elementHeight <= windowHeight - navbarOffset) ?
+    (elementTop - (windowHeight / 2) + (elementHeight / 2)) :
+    (elementTop - navbarOffset);
+
+  window.scrollTo({
+    top: scrollPosition,
+    behavior: 'smooth'
+  });
 }
 
-function scrollHandler() {
-    const navLinks = document.querySelectorAll("nav ul li a.linkToElement");
+function scrollHandler(e) {
+    const navLinks = document.querySelectorAll('nav ul li a.linkToElement');
     const sections = document.querySelectorAll("section[data-scroll-spy='true']");
     const offset = 100; // offset before is considered in viewport
 
@@ -122,7 +135,7 @@ function scrollHandler() {
     });
 
     navLinks.forEach(link => {
-        link.classList.toggle("current", link.getAttribute("href") === `#${currentSectionId}`);
+        link.classList.toggle('current', link.getAttribute('href') === `#${currentSectionId}`);
     });
 }
 
@@ -146,7 +159,7 @@ function init() {
     }
   }
 
-  // Nevigation
+  // Navigation
   {
     // Scroll to element when clicking the link
     if ($get('menu-links') != null) $get('menu-links').onclick = handleScrollToElement;

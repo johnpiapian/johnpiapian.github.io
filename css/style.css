@@ -398,6 +398,7 @@ section.content .projects {
   border-bottom: 1px solid #dadada;
   padding-top: 50px;
   border-radius: 20px;
+  margin: 100px 0;
 }
 
 section.content .projects .sample {
